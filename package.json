@@ -1,0 +1,63 @@
+{
+  "name": "sao",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "file-saver": "^2.0.2",
+    "history": "^4.9.0",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "rc-datepicker": "^5.0.14",
+    "react": "^16.9.0",
+    "react-alert": "^5.5.0",
+    "react-alert-template-basic": "^1.0.0",
+    "react-bootstrap": "^1.0.0-beta.11",
+    "react-bootstrap-dialog": "^0.13.0",
+    "react-csv": "^1.1.2",
+    "react-dom": "^16.9.0",
+    "react-icons": "^3.7.0",
+    "react-new-window": "^0.1.2",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-transition-group": "^4.2.2",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5",
+    "stringquery": "^1.0.8",
+    "styled-components": "^4.3.2",
+    "xlsx": "^0.15.3",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2",
+    "reactotron-react-js": "^3.3.2",
+    "reactotron-redux": "^3.1.1",
+    "reactotron-redux-saga": "^4.2.2"
+  }
+}

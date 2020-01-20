@@ -1,0 +1,177 @@
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { Creators as LoginActions } from "../../store/ducks/login";
+import Logo from '../../images/logo.png';
+// import '../../css/bootstrap.css';
+// import '../../css/style.css';
+// import '../../css/dark.css';
+import { Link } from "react-router-dom";
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
+
+class Header extends Component {
+
+  state = {
+    menuConfig: false,
+    barraPesquisa: false
+  }
+
+  openMenuConfig = () => {
+    this.setState({ menuConfig: true }, () => {
+      document.addEventListener('click', this.closeMenuConfig);
+    });
+  }
+
+  closeMenuConfig = () => {
+    this.setState({ menuConfig: false }, () => {
+      document.removeEventListener('click', this.closeMenuConfig);
+    });
+  }
+
+  openScript = () => {
+    window.open('/scripts','','scrollbars=yes,width=1000,height=400');
+  }
+
+  openBarraPesquisa = () => {
+    let clicou;
+    if (!this.state.barraPesquisa){
+      clicou = true;
+    } else {
+      clicou = false;
+    }
+    this.setState({barraPesquisa: clicou});
+    if (this.state.barraPesquisa){
+      document.body.classList.add('top-search-open');
+    } else {
+      document.body.classList.remove('top-search-open');
+    }
+  }
+
+  static propTypes = {
+    logout: PropTypes.func.isRequired
+  };
+
+  render() {
+    return (
+      <header id="header" className="full-header">
+        <div id="header-wrap">
+          <div className="container clearfix">
+            <div id="primary-menu-trigger"><i className="icon-reorder" /></div>
+
+            <div id="logo">
+              <Link to={"/home"}><img src={Logo} alt="Logo" /></Link>
+            </div>
+
+            <nav id="primary-menu" className="style-5">
+              <ul>
+                <li className="current"><Link to={"/home"}><div><i className="icon-home2" />Home</div></Link></li>
+                <li><Link to={"/ocorrencias"}><div><i className="icon-list2" />Ocorrências</div>
+                  </Link></li>
+                <li>
+                <a href="#" onClick={this.openScript}><div><i className="icon-file-alt" />Scripts</div></a>
+                </li>
+                <li className="mega-menu"><a href="#"><div><i className="icon-chart" />Relatórios</div></a>
+                  <div className="mega-menu-content style-2 clearfix">
+                    <ul className="mega-menu-column col-5">
+                      <li className="mega-menu-title"><a href="#"><div>Ocorrências e Atendimentos</div></a>
+                        <ul>
+                          <li><a href="relatorio.html"><div>Em Andamento - Sintético por operador</div></a></li>
+                          <li><a href="relatorio.html"><div>Em Andamento - Sintético por status</div></a></li>
+                          <li><a href="relatorio.html"><div>Ocorrências - sintético</div></a></li>
+                          <li><a href="relatorio.html"><div>Encerradas- sintético</div></a></li>
+                          <li><a href="relatorio.html"><div>Atendimentos - sintético</div></a></li>
+                          <li><a href="relatorio.html"><div>Atendimentos - sintético - CENTRAL</div></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul className="mega-menu-column col-5">
+                      <li className="mega-menu-title"><a href="#"><div>Relatórios</div></a>
+                        <ul>
+                          <li><a href="portfolio-mixed-masonry.html"><div>Extrator de Mailling</div></a></li>
+                          <li><a href="portfolio-2-masonry.html"><div>Acompanhamento Cielo</div></a></li>
+                          <li><a href="portfolio-3-masonry.html"><div>Acessos ao Aplicativo</div></a></li>
+                          <li><a href="portfolio-masonry.html"><div>Fale Conosco</div></a></li>
+                          <li><a href="relatorio.html"><div>Protocolos de Atendimento</div></a></li>
+                          <li><a href="relatorio.html"><div>Pesquisa Trocas</div></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul className="mega-menu-column col-5">
+                      <li className="mega-menu-title"><a href="#"><div>Ações</div></a>
+                        <ul>
+                          <li><a href="relatorio.html"><div>Papo de Balcão</div></a></li>
+                          <li><a href="relatorio.html"><div>Pesquisa Representatividade</div></a></li>
+                          <li><a href="relatorio.html"><div>Dashboard - vídeos</div></a></li>
+                          <li><a href="relatorio.html"><div>Indicações Profissionais</div></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul className="mega-menu-column col-5">
+                      <li className="mega-menu-title"><a href="#"><div>Ferramentas</div></a>
+                        <ul>
+                          <li><a href="ferramentas.html"><div>Alterar Loja</div></a></li>
+                          <li><a href="ferramentas.html"><div>Redefinir Senha</div></a></li>
+                          <li><a href="ferramentas.html"><div>Excluir E-mails</div></a></li>
+                          <li><a href="ferramentas.html"><div>Excluir Celular</div></a></li>
+                          <li><a href="ferramentas.html"><div>Troca Manual</div></a></li>
+                          <li><a href="ferramentas.html"><div>Alterar CPF ou Cargo</div></a></li>
+                          <li><a href="ferramentas.html"><div>Inativar Participante</div></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul className="mega-menu-column col-5">
+                      <li className="mega-menu-title"><a href="#"><div>Apagadores</div></a>
+                        <ul>
+                          <li><a href="apagador.html"><div>Papo de Balcão</div></a></li>
+                          <li><a href="apagador.html"><div>Vídeos Dashboard</div></a></li>
+                          <li><a href="apagador.html"><div>Apagar Pesquisa Varejo</div></a></li>
+                          <li><a href="apagador.html"><div>Apagar Curso</div></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><Link to={"/discador"}><div><i className="icon-phone3" />Discador</div></Link></li>
+                <li><a href="#" onClick={this.openMenuConfig}><div><i className="icon-cog" />Config</div></a>
+                {this.state.menuConfig ? (
+                  <ul style={{display:'block'}}>
+                    <li><a href="configuracoes_acoes.html"><div>Ações</div></a></li>
+                    <li><a href="configuracoes_cadastros_gerais.html"><div>Cadastros de itens de Combos</div></a></li>
+                    <li><a href="configuracoes_literais_pontuacao.html"><div>Literais de Pontuação</div></a></li>
+                  </ul>
+                  ) : (null)}
+                </li>
+
+                <li className="mega-menu"><a href="#" onClick={this.props.logout}><div><i className="icon-off" />Sair</div></a></li>
+              </ul>
+
+              <div id="top-search">
+                <a href="#" id="top-search-trigger"  onClick={this.openBarraPesquisa}>
+                  <i className="icon-search3"/>
+                  <i className="icon-line-cross" /></a>
+                <form action="cadastro.html" method="POST">
+                  <input type="text" name="q" className="form-control" placeholder="Informe o CPF, nome, email ou telefone" />
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+    );
+  }
+}
+
+
+const mapStateToProps = state => ({
+  login: state.login
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(LoginActions, dispatch);
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Header);

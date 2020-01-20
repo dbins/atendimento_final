@@ -1,0 +1,3587 @@
+/* ----------------------------------------------------------------
+
+	- Basic
+	- Typography
+	- Basic Layout Styles
+	- Helper Classes
+	- Sections
+	- Columns & Grids
+	- Flex Slider
+	- Swiper Slider
+	- Top Bar
+	- Header
+		- Logo
+		- Primary Menu
+		- Mega Menu
+		- Top Search
+		- Top Cart
+		- Sticky Header
+		- Page Menu
+		- Side Header
+	- Side Panel
+	- Slider
+	- Page Title
+	- Content
+	- Portfolio
+	- Blog
+	- Shop
+	- Events
+	- Shortcodes
+		- Countdown
+		- Buttons
+		- Promo Boxes
+		- Featured Boxes
+		- Process Steps
+		- Styled Icons
+		- Toggles
+		- Accordions
+		- Tabs
+		- Side Navigation
+		- FAQ List
+		- Clients
+		- Testimonials
+		- Team
+		- Pricing Boxes
+		- Counter
+		- Animated Rounded Skills
+		- Skills Bar
+		- Dropcaps & Highlights
+		- Quotes & Blockquotes
+		- Text Rotater
+	- Owl Carousel
+	- Overlays
+	- Forms
+	- Google Maps
+	- Heading Styles
+	- Divider
+	- Magazine Specific Classes
+	- Go To Top
+	- Error 404
+	- Landing Pages
+	- Preloaders
+	- Toastr Notifications
+	- Footer
+	- Widgets
+		- Tag Cloud
+		- Links
+		- Testimonial & Twitter
+		- Quick Contact Form
+		- Newsletter
+		- Twitter Feed
+		- Navigation Tree
+	- Wedding
+	- Bootstrap Specific
+	- Cookie Notification
+	- Stretched Layout
+	- Page Transitions
+	- Youtube Video Backgrounds
+
+---------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	Bootstrap Adjustments
+-----------------------------------------------------------------*/
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+body {
+  font-size: 0.875rem;
+}
+
+/* ----------------------------------------------------------------
+	Basic
+-----------------------------------------------------------------*/
+
+ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0px;
+  height: 0px;
+  line-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+::selection {
+  background: #1ABC9C;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #1ABC9C;
+  /* Firefox */
+  color: #FFF;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background: #1ABC9C;
+  /* Safari */
+  color: #FFF;
+  text-shadow: none;
+}
+
+:active,:focus {
+  outline: none !important;
+}
+
+/* ----------------------------------------------------------------
+	Typography
+-----------------------------------------------------------------*/
+
+body {
+  line-height: 1.5;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: #1ABC9C;
+}
+
+a:hover {
+  color: #222;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----------------------------------------------------------------
+	Basic Layout Styles
+-----------------------------------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  color: #444;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 30px 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h5,h6 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5,h6 {
+  font-weight: bold;
+}
+
+p,ul,table,form {
+  margin-bottom: 30px;
+}
+
+small {
+  font-family: 'Lato', sans-serif;
+}
+
+/* ----------------------------------------------------------------
+	Helper Classes
+-----------------------------------------------------------------*/
+
+.tright {
+  text-align: right !important;
+}
+
+.fright {
+  float: right !important;
+}
+
+.fleft {
+  float: left !important;
+}
+
+#wrapper {
+  position: relative;
+  float: none;
+  width: 1220px;
+  margin: 0 auto;
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.line {
+  clear: both;
+  position: relative;
+  width: 100%;
+  margin: 60px 0;
+  border-top: 1px solid #EEE;
+}
+
+.line.line-sm {
+  margin: 30px 0;
+}
+
+span.middot {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.nomargin {
+  margin: 0 !important;
+}
+
+.norightmargin {
+  margin-right: 0 !important;
+}
+
+.notopmargin {
+  margin-top: 0 !important;
+}
+
+.nobottommargin {
+  margin-bottom: 0 !important;
+}
+
+.noborder {
+  border: none !important;
+}
+
+.noradius {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.col-padding {
+  padding: 60px;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.divcenter {
+  position: relative !important;
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.color {
+  color: #1ABC9C !important;
+}
+
+.nobg {
+  background: none !important;
+}
+
+.t300 {
+  font-weight: 300 !important;
+}
+
+.t400 {
+  font-weight: 400 !important;
+}
+
+.t500 {
+  font-weight: 500 !important;
+}
+
+.t600 {
+  font-weight: 600 !important;
+}
+
+.t700 {
+  font-weight: 700 !important;
+}
+
+.font-body {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-primary {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* MOVING BG -  TESTIMONIALS */
+
+
+/* ----------------------------------------------------------------
+	Sections
+-----------------------------------------------------------------*/
+
+.section {
+  position: relative;
+  margin: 60px 0;
+  padding: 60px 0;
+  background-color: #F9F9F9;
+  overflow: hidden;
+}
+
+.parallax {
+  background-color: transparent;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.video-placeholder {
+  background-size: cover !important;
+  background-attachment: scroll !important;
+  background-position: center center !important;
+}
+
+.section .container {
+  z-index: 2;
+}
+
+.section .container + .video-wrap {
+  z-index: 1;
+}
+
+/* ----------------------------------------------------------------
+	Columns & Grids
+-----------------------------------------------------------------*/
+
+.col_full {
+  width: 100%;
+}
+
+.col_half {
+  width: 48%;
+}
+
+.sidebar {
+  width: 22%;
+}
+
+.postcontent {
+  width: 74%;
+}
+
+.col_one_fifth {
+  width: 16.8%;
+}
+
+.col_two_fifth {
+  width: 37.6%;
+}
+
+.col_one_sixth {
+  width: 13.33%;
+}
+
+body.stretched .container-fullwidth {
+  position: relative;
+  padding: 0 60px;
+  width: 100%;
+}
+
+.postcontent,.sidebar,.col_full,.col_half,.col_one_fifth,.col_two_fifth,.col_one_sixth {
+  display: block;
+  position: relative;
+  margin-right: 4%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.col_full {
+  clear: both;
+  float: none;
+  margin-right: 0;
+}
+
+.postcontent.col_last,.sidebar.col_last {
+  float: right;
+}
+
+.col_last {
+  margin-right: 0 !important;
+  clear: right;
+}
+
+/* ----------------------------------------------------------------
+	Flex Slider
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Top Bar
+-----------------------------------------------------------------*/
+
+/* Top Links
+---------------------------------*/
+
+/* Top Social
+-----------------------------------------------------------------*/
+
+/* Top Login
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+#header {
+  position: relative;
+  background-color: #FFF;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+#header .container {
+  position: relative;
+}
+
+#header.full-header {
+  border-bottom-color: #EEE;
+}
+
+body.stretched #header.full-header .container {
+  width: 100%;
+  max-width: none;
+  padding: 0 30px;
+}
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+#logo {
+  position: relative;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  line-height: 100%;
+  margin-right: 40px;
+}
+
+#header.full-header #logo {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #EEE;
+}
+
+#logo a {
+  display: block;
+  color: #000;
+}
+
+#logo img {
+  display: block;
+  max-width: 100%;
+}
+
+#logo a.standard-logo {
+  display: block;
+}
+
+#logo a.retina-logo {
+  display: none;
+}
+
+/* ----------------------------------------------------------------
+	Header Right Area
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+  float: right;
+}
+
+#header.full-header #primary-menu > ul {
+  float: left;
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid #EEE;
+}
+
+#primary-menu-trigger {
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+#primary-menu ul {
+  list-style: none;
+  margin: 0;
+}
+
+#primary-menu > ul {
+  float: left;
+}
+
+#primary-menu ul li {
+  position: relative;
+}
+
+#primary-menu ul li.mega-menu {
+  position: inherit;
+}
+
+#primary-menu ul > li {
+  float: left;
+  margin-left: 2px;
+}
+
+#primary-menu > ul > li:first-child {
+  margin-left: 0;
+}
+
+#primary-menu ul li > a {
+  display: block;
+  line-height: 22px;
+  padding: 39px 15px;
+  color: #444;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  -webkit-transition: margin .4s ease, padding .4s ease;
+  -o-transition: margin .4s ease, padding .4s ease;
+  transition: margin .4s ease, padding .4s ease;
+}
+
+#primary-menu ul li > a span {
+  display: none;
+}
+
+#primary-menu ul li > a i {
+  position: relative;
+  top: -1px;
+  font-size: 14px;
+  width: 16px;
+  text-align: center;
+  margin-right: 6px;
+  vertical-align: top;
+}
+
+#primary-menu ul li:hover > a,#primary-menu ul li.current > a {
+  color: #1ABC9C;
+}
+
+
+
+#primary-menu ul ul:not(.mega-menu-column),#primary-menu ul li .mega-menu-content {
+  display: none;
+  position: absolute;
+  width: 220px;
+  background-color: #FFF;
+  box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
+  border: 1px solid #EEE;
+  border-top: 2px solid #1ABC9C;
+  height: auto;
+  z-index: 199;
+  top: 100%;
+  left: 0;
+  margin: 0;
+}
+
+#primary-menu ul ul:not(.mega-menu-column) ul {
+  top: -2px !important;
+  left: 218px;
+}
+
+#primary-menu ul ul li {
+  float: none;
+  margin: 0;
+}
+
+#primary-menu ul ul li:first-child {
+  border-top: 0;
+}
+
+#primary-menu ul ul li > a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #666;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  letter-spacing: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#primary-menu ul ul li > a i {
+  vertical-align: middle;
+}
+
+#primary-menu ul ul li:hover > a {
+  background-color: #F9F9F9;
+  padding-left: 18px;
+  color: #1ABC9C;
+}
+
+#primary-menu ul ul > li.sub-menu > a,#primary-menu ul ul > li.sub-menu:hover > a {
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+#primary-menu ul li .mega-menu-content,#primary-menu ul li.mega-menu-small .mega-menu-content {
+  width: 720px;
+  max-width: 400px;
+}
+
+#primary-menu ul li.mega-menu .mega-menu-content {
+  margin: 0 15px;
+  width: 1140px;
+  max-width: none;
+}
+
+body.stretched .container-fullwidth #primary-menu ul li.mega-menu .mega-menu-content {
+  margin: 0 60px;
+}
+
+body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-content {
+  margin: 0 30px;
+}
+
+#primary-menu ul li.mega-menu .mega-menu-content.style-2 {
+  padding: 0 10px;
+}
+
+#primary-menu ul li .mega-menu-content ul {
+  display: block;
+  position: relative;
+  top: 0;
+  min-width: inherit;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+#primary-menu ul li .mega-menu-content ul.mega-menu-column {
+  float: left;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#primary-menu ul li .mega-menu-content ul.mega-menu-column.col-5 {
+  width: 20%;
+  max-width: none;
+}
+
+#primary-menu ul li .mega-menu-content ul:not(.mega-menu-column) {
+  width: 100%;
+}
+
+#primary-menu ul li .mega-menu-content ul.mega-menu-column:not(:first-child) {
+  border-left: 1px solid #F2F2F2;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column {
+  padding: 30px 20px;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title {
+  margin-top: 20px;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title:first-child {
+  margin-top: 0;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase !important;
+  margin-bottom: 15px;
+  color: #444;
+  padding: 0 !important;
+  line-height: 1.3 !important;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title:hover > a {
+  background-color: transparent;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover {
+  color: #1ABC9C;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title.sub-menu > a,#primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title.sub-menu:hover > a {
+  background: none;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 li {
+  border: 0;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul li > a {
+  padding-left: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#primary-menu ul li .mega-menu-content.style-2 ul li > a:hover {
+  padding-left: 12px;
+}
+
+/* Primary Menu - Style 2
+-----------------------------------------------------------------*/
+
+/* Primary Menu - Style 3
+-----------------------------------------------------------------*/
+
+
+/* Primary Menu - Style 4
+-----------------------------------------------------------------*/
+
+/* Primary Menu - Style 5
+-----------------------------------------------------------------*/
+
+#primary-menu.style-5 > ul {
+  padding-right: 10px;
+  margin-right: 5px;
+  border-right: 1px solid #EEE;
+}
+
+#primary-menu.style-5 > ul > li:not(:first-child) {
+  margin-left: 15px;
+}
+
+#primary-menu.style-5 > ul > li > a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 14px;
+}
+
+#primary-menu.style-5 > ul > li > a i {
+  display: block;
+  width: auto;
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Primary Menu - Style 6
+-----------------------------------------------------------------*/
+
+/* Primary Menu - Sub Title
+-----------------------------------------------------------------*/
+
+#primary-menu.sub-title > ul > li,#primary-menu.sub-title.style-2 > div > ul > li {
+  
+  margin-left: 1px;
+}
+
+#primary-menu.sub-title ul li:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#primary-menu.sub-title > ul > li > a,#primary-menu.sub-title > div > ul > li > a {
+  line-height: 14px;
+  padding: 27px 20px 32px;
+  text-transform: uppercase;
+  border-top: 5px solid transparent;
+}
+
+#primary-menu.sub-title > ul > li > a span,#primary-menu.sub-title > div > ul > li > a span {
+  display: block;
+  margin-top: 10px;
+  line-height: 12px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #888;
+  text-transform: capitalize;
+}
+
+#primary-menu.sub-title > ul > li:hover > a,#primary-menu.sub-title > ul > li.current > a,#primary-menu.sub-title > div > ul > li:hover > a,#primary-menu.sub-title > div > ul > li.current > a {
+  background-color: #1ABC9C;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  border-top-color: rgba(0,0,0,0.1);
+}
+
+#primary-menu.sub-title > ul > li:hover > a span,#primary-menu.sub-title > ul > li.current > a span,#primary-menu.sub-title.style-2 > div > ul > li:hover > a span,#primary-menu.sub-title.style-2 > div > ul > li.current > a span {
+  color: #EEE;
+}
+
+#primary-menu.sub-title.style-2 ul ul span {
+  display: none;
+}
+
+/* Primary Menu - Style 2 with Sub Title
+-----------------------------------------------------------------*/
+
+
+/* Primary Menu - Split Menu
+-----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+  #header.split-menu #logo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    float: none;
+    height: 100px;
+  }
+
+  #header.split-menu #logo a.standard-logo {
+    display: inline-block;
+  }
+}
+
+#header.split-menu #primary-menu {
+  float: none;
+  margin: 0;
+}
+
+#header.split-menu #primary-menu > ul {
+  z-index: 199;
+}
+
+#header.split-menu #primary-menu > ul:first-child {
+  float: left;
+}
+
+#header.split-menu #primary-menu > ul:last-child {
+  float: right;
+}
+
+/* Primary Menu - Overlay Menu
+-----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+  .overlay-menu:not(.top-search-open) #primary-menu-trigger {
+    opacity: 1;
+    pointer-events: auto;
+    left: auto;
+    right: 75px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: -10px;
+  }
+
+  .overlay-menu:not(.top-search-open) .full-header #primary-menu-trigger {
+    right: 90px;
+  }
+
+  .overlay-menu #primary-menu > #overlay-menu-close {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 25px;
+    left: auto;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 24px;
+    text-align: center;
+    color: #444;
+    z-index: 300;
+    -webkit-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+    transform: translateY(-80px);
+    -webkit-transition: opacity .4s ease, transform .45s .15s ease;
+    -o-transition: opacity .4s ease, transform .45s .15s ease;
+    transition: opacity .4s ease, transform .45s .15s ease;
+  }
+
+  .overlay-menu #primary-menu > ul {
+    opacity: 0 !important;
+    pointer-events: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100% !important;
+    z-index: 299;
+    background: rgba(255,255,255,0.95);
+    -webkit-transition: opacity .7s ease;
+    -o-transition: opacity .7s ease;
+    transition: opacity .7s ease;
+  }
+
+  .overlay-menu #primary-menu > ul > li {
+    float: none;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .overlay-menu #primary-menu > ul > li > a {
+    font-size: 24px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    letter-spacing: 2px;
+    text-transform: none;
+    opacity: 0;
+    -webkit-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+    transform: translateY(-80px);
+    -webkit-transition: opacity .7s .15s ease, transform .45s .15s ease, color .2s linear;
+    -o-transition: opacity .7s .15s ease, transform .45s .15s ease, color .2s linear;
+    transition: opacity .7s .15s ease, transform .45s .15s ease, color .2s linear;
+  }
+}
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+#top-search,#top-cart,#side-panel-trigger {
+  float: right;
+  margin: 40px 0 40px 15px;
+}
+
+#top-cart {
+  position: relative;
+}
+
+#top-search a,#top-cart > a,#side-panel-trigger a {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+#top-search a {
+  z-index: 11;
+}
+
+#top-search a i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+body.top-search-open #top-search a i.icon-search3,#top-search a i.icon-line-cross {
+  opacity: 0;
+}
+
+body.top-search-open #top-search a i.icon-line-cross {
+  opacity: 1;
+  z-index: 11;
+  font-size: 16px;
+}
+
+#top-cart > a:hover {
+  color: #1ABC9C;
+}
+
+#top-search form {
+  opacity: 0;
+  z-index: -2;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 15px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+body.top-search-open #top-search form {
+  opacity: 1;
+  z-index: 10;
+}
+
+#top-search form input {
+  box-shadow: none !important;
+  pointer-events: none;
+  border-radius: 0;
+  border: 0;
+  outline: 0 !important;
+  font-size: 32px;
+  padding: 10px 80px 10px 0;
+  height: 100%;
+  background-color: transparent;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0 !important;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+
+body:not(.device-md):not(.device-sm):not(.device-xs) #header.full-header #top-search form input {
+  padding-left: 40px;
+}
+
+body:not(.device-md):not(.device-sm):not(.device-xs) .container-fullwidth #top-search form input {
+  padding-left: 60px;
+}
+
+body.top-search-open #top-search form input {
+  pointer-events: auto;
+}
+
+#top-search form input::-moz-placeholder {
+  color: #555;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+#top-search form input:-ms-input-placeholder {
+  color: #555;
+  text-transform: uppercase;
+}
+
+#top-search form input::-webkit-input-placeholder {
+  color: #555;
+  text-transform: uppercase;
+}
+
+#primary-menu .container #top-search form input {
+  border: none !important;
+}
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+#top-cart {
+  margin-right: 0;
+}
+
+#top-cart > a > span {
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: auto;
+  right: -14px;
+  font-size: 10px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #1ABC9C;
+  border-radius: 50%;
+}
+
+#top-cart .top-cart-content {
+  opacity: 0;
+  z-index: -2;
+  position: absolute;
+  width: 280px;
+  background-color: #FFF;
+  box-shadow: 0px 20px 50px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #EEE;
+  border-top: 2px solid #1ABC9C;
+  top: 60px;
+  right: -15px;
+  left: auto;
+  margin: -10000px 0 0;
+  -webkit-transition: opacity .5s ease, top .4s ease;
+  -o-transition: opacity .5s ease, top .4s ease;
+  transition: opacity .5s ease, top .4s ease;
+}
+
+.style-2 .container #top-cart .top-cart-content {
+  top: 40px;
+}
+
+.style-2.sub-title .container #top-cart .top-cart-content {
+  top: 50px;
+}
+
+#top-cart.top-cart-open .top-cart-content {
+  opacity: 1;
+  z-index: 11;
+  margin-top: 0;
+}
+
+.top-cart-title {
+  padding: 12px 15px;
+  border-bottom: 1px solid #EEE;
+}
+
+.top-cart-title h4 {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.top-cart-items {
+  padding: 15px;
+}
+
+.top-cart-item {
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #F5F5F5;
+}
+
+.top-cart-item:first-child {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+}
+
+.top-cart-item-image {
+  float: left;
+  margin-right: 15px;
+  width: 48px !important;
+  height: 48px !important;
+  border: 2px solid #EEE;
+  -webkit-transition: border-color .2s linear;
+  -o-transition: border-color .2s linear;
+  transition: border-color .2s linear;
+}
+
+.top-cart-item-image a,.top-cart-item-image img {
+  display: block;
+  width: 44px !important;
+  height: 44px !important;
+}
+
+.top-cart-item-image:hover {
+  border-color: #1ABC9C;
+}
+
+.top-cart-item-desc {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-cart-item-desc a {
+  text-align: left !important;
+  font-size: 13px !important;
+  width: auto !important;
+  height: auto !important;
+  color: #333;
+  font-weight: 700;
+}
+
+.top-cart-item-desc a:hover {
+  color: #1ABC9C !important;
+}
+
+.top-cart-item-desc span.top-cart-item-price {
+  display: block;
+  line-height: 20px;
+  font-size: 12px !important;
+  color: #999;
+}
+
+.top-cart-item-desc span.top-cart-item-quantity {
+  display: block;
+  position: absolute;
+  font-size: 12px !important;
+  right: 0;
+  top: 2px;
+  color: #444;
+}
+
+.top-cart-action {
+  padding: 15px;
+  border-top: 1px solid #EEE;
+}
+
+.top-cart-action span.top-checkout-price {
+  font-size: 20px;
+  color: #1ABC9C;
+}
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+#header,#header-wrap,#logo img {
+  height: 100px;
+  -webkit-transition: height .4s ease, opacity .3s ease;
+  -o-transition: height .4s ease, opacity .3s ease;
+  transition: height .4s ease, opacity .3s ease;
+}
+
+#primary-menu > ul > li > ul,#primary-menu > ul > li > .mega-menu-content,#primary-menu > ul > li.mega-menu > .mega-menu-content {
+  -webkit-transition: top .4s ease;
+  -o-transition: top .4s ease;
+  transition: top .4s ease;
+}
+
+#top-search,#top-cart {
+  -webkit-transition: margin .4s ease, opacity .3s ease;
+  -o-transition: margin .4s ease, opacity .3s ease;
+  transition: margin .4s ease, opacity .3s ease;
+}
+
+body:not(.top-search-open) #header-wrap #logo,body:not(.top-search-open) #primary-menu > ul,body:not(.top-search-open) #primary-menu > .container > ul,body:not(.top-search-open) #top-cart,body:not(.top-search-open) #side-panel-trigger {
+  opacity: 1;
+  -webkit-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
+  -o-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
+  transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
+}
+
+body.top-search-open #header-wrap #logo,body.top-search-open #primary-menu > ul,body.top-search-open #primary-menu > .container > ul,body.top-search-open #top-cart,body.top-search-open #side-panel-trigger {
+  opacity: 0;
+}
+
+#header-wrap {
+  position: relative;
+  z-index: 199;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Primary Menu - Style 3
+-----------------------------------------------------------------*/
+
+/* Primary Menu - Style 4
+-----------------------------------------------------------------*/
+
+/* Primary Menu - Style 5
+-----------------------------------------------------------------*/
+
+/* Primary Menu - Sub Title
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Page Menu
+-----------------------------------------------------------------*/
+
+#page-menu,#page-menu-wrap {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+#page-menu-wrap {
+  z-index: 99;
+  background-color: #1ABC9C;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+
+#page-menu .menu-title {
+  float: left;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#page-menu .menu-title span {
+  font-weight: 700;
+}
+
+#page-menu nav {
+  position: relative;
+  float: right;
+}
+
+#page-menu nav ul {
+  margin-bottom: 0;
+  height: 44px;
+}
+
+#page-menu nav li {
+  position: relative;
+  float: left;
+  list-style: none;
+}
+
+#page-menu nav li a {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  margin: 8px 4px;
+  padding: 0 14px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 14px;
+}
+
+#page-menu nav li:hover a,#page-menu nav li.current a {
+  background-color: rgba(0,0,0,0.15);
+}
+
+#page-menu li:hover ul {
+  display: block;
+}
+
+#page-menu ul ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 44px;
+  left: 0;
+  z-index: 149;
+  height: auto;
+  background-color: #1ABC9C;
+}
+
+#page-menu ul ul ul {
+  display: none !important;
+}
+
+/* Disable Multi-Level Links */
+
+#page-menu ul ul li {
+  float: none;
+}
+
+#page-menu ul ul a {
+  height: auto;
+  line-height: 22px;
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 0;
+  background-color: rgba(0,0,0,0.15);
+}
+
+#page-menu ul ul li:hover a,#page-menu ul ul li.current a {
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Page Menu - Dots Style
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	One Page
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Side Header
+-----------------------------------------------------------------*/
+
+  /* Side Header - Push Header
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Side Push Panel
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Slider
+-----------------------------------------------------------------*/
+
+/* Boxed Slider
+-----------------------------------------------------------------*/
+
+/* Flex Slider - Thumbs
+-----------------------------------------------------------------*/
+
+/* Flex Thumbs - Flexible
+-----------------------------------------------------------------*/
+
+/* Swiper Slider
+-----------------------------------------------------------------*/
+
+/* Revolution Slider
+-----------------------------------------------------------------*/
+
+/* Video Overlay
+-----------------------------------------------------------------*/
+
+/* Slider Caption
+-----------------------------------------------------------------*/
+
+/* Slider Arrows
+-----------------------------------------------------------------*/
+
+
+/* Slide Number
+-----------------------------------------------------------------*/
+
+/* Pagination
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+
+#page-title {
+  position: relative;
+  padding: 50px 0;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #EEE;
+}
+
+#page-title .container {
+  position: relative;
+}
+
+#page-title h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #333;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+#page-title span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #777;
+  font-size: 18px;
+}
+
+/* Page Title - Dark
+-----------------------------------------------------------------*/
+
+#page-title.page-title-dark {
+  background-color: #333;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.15) !important;
+  border-bottom: none;
+}
+
+#page-title.page-title-dark h1 {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+#page-title.page-title-dark span {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Page Title - Right Aligned
+-----------------------------------------------------------------*/
+
+#page-title.page-title-right {
+  text-align: right;
+}
+
+/* Page Title - Center Aligned
+-----------------------------------------------------------------*/
+
+#page-title.page-title-center {
+  text-align: center;
+}
+
+#page-title.page-title-center span {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page Title - Background Pattern
+-----------------------------------------------------------------*/
+
+/* Page Title - Parallax Background
+-----------------------------------------------------------------*/
+
+#page-title.page-title-parallax {
+  padding: 100px 0;
+  text-shadow: none;
+  border-bottom: none;
+}
+
+#page-title.page-title-parallax h1 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#page-title.page-title-parallax span {
+  font-size: 22px;
+}
+
+#page-title.page-title-parallax {
+  background-color: transparent;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+/* Page Title - Mini
+-----------------------------------------------------------------*/
+
+/* Page Title - No Background
+-----------------------------------------------------------------*/
+
+#page-title.page-title-nobg {
+  background: transparent !important;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+/* Page Title - Video
+-----------------------------------------------------------------*/
+
+#page-title.page-title-video {
+  background: none;
+  position: relative;
+  overflow: hidden;
+}
+
+#page-title.page-title-video .container {
+  z-index: 3;
+}
+
+#page-title.page-title-video .video-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#page-title.page-title-video .video-wrap video {
+  width: 100%;
+}
+
+/* ----------------------------------------------------------------
+	Content
+-----------------------------------------------------------------*/
+
+#content {
+  position: relative;
+  overflow: hidden;
+  background-color: #FFF;
+}
+
+#content p {
+  line-height: 1.8;
+}
+
+.content-wrap {
+  position: relative;
+  padding: 80px 0;
+}
+
+#content .container {
+  position: relative;
+}
+
+.grid-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ----------------------------------------------------------------
+	Portfolio
+-----------------------------------------------------------------*/
+
+/* Portfolio - Filter
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Filter: Style 2
+-----------------------------------------------------------------*/
+
+/* Portfolio - Filter: Style 3
+-----------------------------------------------------------------*/
+
+/* Portfolio - Filter: Style 4
+-----------------------------------------------------------------*/
+
+/* Portfolio - Center Aligned
+-----------------------------------------------------------------*/
+
+/* Portfolio - Shuffle Icon
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items
+-----------------------------------------------------------------*/
+
+/* Portfolio - Item Title
+-----------------------------------------------------------------*/
+
+/* Portfolio - No Margin
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Sidebar
+-----------------------------------------------------------------*/
+
+/* Portfolio - Sidebar - No Title
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Both Sidebars
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 3 Columns
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Sidebar - Items - 3 Columns
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Sidebar - Items - 3 Columns - No Title
+-----------------------------------------------------------------*/
+
+/* Portfolio - Both Sidebars - Items - 3 Columns
+-----------------------------------------------------------------*/
+
+/* Portfolio - Both Sidebars - Items - 3 Columns - No Title
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 2 Columns
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 2 Columns - No Margin
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Items - 2 Columns - No Title
+-----------------------------------------------------------------*/
+
+/* Portfolio - Sidebar - Items - 2 Columns
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Sidebar - Items - 2 Columns - No Margin
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Sidebar - Items - 2 Columns - No Title
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Both Sidebars - Items - 2 Columns
+-----------------------------------------------------------------*/
+
+/* Portfolio - Both Sidebars - Items - 2 Columns - No Margin
+-----------------------------------------------------------------*/
+
+/* Portfolio - Both Sidebars - Items - 2 Columns - No Title
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 5 Columns
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Items - 5 Columns - No Title
+-----------------------------------------------------------------*/
+
+/* Portfolio - Sidebar - Items - 5 Columns
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Sidebar - Items - 5 Columns - No Title
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Items - 6 Columns
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 6 Columns - No Title
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 1 Column
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 1 Column - Both Sidebar
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 1 Column - Full Width
+-----------------------------------------------------------------*/
+
+/* Portfolio - Items - 1 Column - Full Width - Sidebar
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Items - 1 Column - Full Width - Both Sidebar
+-----------------------------------------------------------------*/
+
+/* Portfolio - Parallax
+-----------------------------------------------------------------*/
+
+
+/* Portfolio - Overlay
+-----------------------------------------------------------------*/
+
+/* Portfolio Single
+-----------------------------------------------------------------*/
+
+
+/* Portfolio Single - Image
+-----------------------------------------------------------------*/
+
+/* Portfolio Single - Gallery Thumbs
+-----------------------------------------------------------------*/
+
+
+/* Portfolio & Blog Single - Masonry
+-----------------------------------------------------------------*/
+
+/* Portfolio Single - Content
+-----------------------------------------------------------------*/
+
+
+/* Portfolio Single - Meta
+-----------------------------------------------------------------*/
+
+/* Portfolio Single Navigation
+-----------------------------------------------------------------*/
+
+/* Individual Portfolio Item
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+
+/* Small Thumbs
+-----------------------------------------------------------------*/
+
+/* Small Thumbs - Right
+-----------------------------------------------------------------*/
+
+/* Small Thumbs - Both Sidebar
+-----------------------------------------------------------------*/
+
+/* Blog - Grid
+-----------------------------------------------------------------*/
+
+/* Blog - Grid - 3 Columns
+-----------------------------------------------------------------*/
+
+/* Blog - Grid - 3 Columns - Sidebar
+-----------------------------------------------------------------*/
+
+
+/* Blog - Grid - 2 Columns
+-----------------------------------------------------------------*/
+
+
+/* Blog - Grid - 2 Columns - Sidebar
+-----------------------------------------------------------------*/
+
+/* Blog - Grid - 2 Columns - Both Sidebar
+-----------------------------------------------------------------*/
+
+/* Blog - Masonry
+-----------------------------------------------------------------*/
+
+/* Blog - Masonry Full
+-----------------------------------------------------------------*/
+
+/* Blog - Timeline
+-----------------------------------------------------------------*/
+
+/* Blog - Timeline - Sidebar
+-----------------------------------------------------------------*/
+
+/* Individual Post
+-----------------------------------------------------------------*/
+
+/* Related Posts
+-----------------------------------------------------------------*/
+
+/* Small Post
+-----------------------------------------------------------------*/
+
+/* Medium Post
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog - Author
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Comments List
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Comment Form
+-----------------------------------------------------------------*/
+
+/* Post Elements
+-----------------------------------------------------------------*/
+
+/* Infinity Scroll - Message Style
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+.shop {
+  position: relative;
+  margin: 0 -20px -20px 0;
+}
+
+.product {
+  position: relative;
+}
+
+.shop .product {
+  float: left;
+  padding: 0 20px 20px 0;
+  width: 25%;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.product-image > a,.product-image .slide a,.product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.product-image > a:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.product-image:hover > a:nth-of-type(2) {
+  opacity: 1;
+  z-index: 2;
+}
+
+.product-desc {
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+.product-title {
+  margin-bottom: 7px;
+}
+
+.product-title h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.product-title h3 a,.single-product .product-title h2 a {
+  color: #333;
+}
+
+.product-title h3 a:hover,.single-product .product-title h2 a:hover {
+  color: #1ABC9C;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.product-price del {
+  font-weight: 400;
+  font-size: 90%;
+  color: #888;
+}
+
+.product-price ins {
+  text-decoration: none;
+  color: #1ABC9C;
+}
+
+.product-overlay {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  top: auto;
+  bottom: -44px;
+  left: 0;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.product:hover .product-overlay {
+  bottom: 0;
+}
+
+.product-overlay a {
+  display: block;
+  float: left;
+  width: 50%;
+  font-size: 13px;
+  color: #333;
+  background-color: #F5F5F5;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.product-overlay a.item-quick-view {
+  border-right: 0;
+}
+
+.product-overlay a i {
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+.product-overlay a:hover {
+  background-color: #333;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.sale-flash {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px 10px;
+  background-color: #1ABC9C;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  z-index: 5;
+}
+
+/* Shop - 3 Columns
+-----------------------------------------------------------------*/
+
+.shop.product-3 {
+  margin: 0 -30px -30px 0;
+}
+
+.product-3 .product {
+  padding: 0 30px 30px 0;
+  width: 33.33333333%;
+}
+
+/* Shop - 3 Columns - Sidebar
+-----------------------------------------------------------------*/
+
+.postcontent .shop.product-3 {
+  margin: 0 -25px -25px 0;
+}
+
+.postcontent .product-3 .product {
+  padding: 0 25px 25px 0;
+}
+
+/* Shop - 2 Columns - Sidebar
+-----------------------------------------------------------------*/
+
+.postcontent .shop.product-2 {
+  margin: 0 -40px -40px 0;
+}
+
+.postcontent .product-2 .product {
+  padding: 0 40px 40px 0;
+  width: 50%;
+}
+
+/* Shop - 2 Columns - Both Sidebar
+-----------------------------------------------------------------*/
+
+/* Shop - 1 Column
+-----------------------------------------------------------------*/
+
+.shop.product-1 {
+  margin: 0 0 -40px 0;
+}
+
+.product-1 .product {
+  float: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+  width: 100%;
+}
+
+.product-1 .product-image {
+  float: left;
+  width: 300px;
+  height: 400px;
+  margin-right: 30px;
+}
+
+.product-1 .product.alt .product-image {
+  float: right;
+  margin: 0 0 0 30px;
+}
+
+.product-1 .product-desc {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-1 .product-title h3 {
+  font-size: 22px;
+}
+
+.product-1 .product-desc .product-price {
+  font-size: 20px;
+}
+
+/* Shop - 1 Column - Both Sidebar
+-----------------------------------------------------------------*/
+
+/* Shop - Single
+-----------------------------------------------------------------*/
+
+.single-product .product {
+  width: 100%;
+  margin: 0;
+}
+
+.shop-quick-view-ajax,.portfolio-ajax-modal {
+  position: relative;
+  background-color: #FFF;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.single-product .product-image,.single-product .product-image img {
+  height: auto;
+}
+
+.single-product .product-desc {
+  padding: 0;
+}
+
+.single-product .product-title h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.single-product .product-price {
+  float: left;
+  font-size: 24px;
+  color: #1ABC9C;
+  margin-bottom: 0;
+}
+
+.single-product .product-desc .line {
+  margin: 20px 0;
+}
+
+.quantity {
+  float: left;
+  margin-right: 30px;
+}
+
+.quantity .qty {
+  float: left;
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  border: 0;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  background-color: #EEE;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.quantity .plus,.quantity .minus {
+  display: block;
+  float: left;
+  cursor: pointer;
+  border: 0px transparent;
+  padding: 0;
+  width: 36px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #EEE;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color .2s linear;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+}
+
+.quantity .plus:hover,.quantity .minus:hover {
+  background-color: #DDD;
+}
+
+.quantity .qty:focus,.quantity .plus:focus,.quantity .minus:focus {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.single-product .add-to-cart.button {
+  height: 40px;
+  line-height: 40px;
+}
+
+.product-meta {
+  font-size: 13px;
+  color: #777;
+}
+
+.product-meta > .panel-body {
+  margin-bottom: -5px;
+}
+
+.product-meta > .panel-body > span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Individual Product
+-----------------------------------------------------------------*/
+
+.product.iproduct {
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.iproduct .product-image,.iproduct .product-image a,.iproduct .product-image img {
+  height: auto;
+}
+
+/* ----------------------------------------------------------------
+	Cart
+-----------------------------------------------------------------*/
+
+.cart .remove {
+  font-size: 14px;
+  color: #FF0000;
+}
+
+.cart .remove:hover {
+  color: #000;
+}
+
+.cart th {
+  padding: 12px 15px !important;
+  font-size: 14px;
+  color: #555;
+}
+
+.cart td {
+  padding: 12px 15px !important;
+  vertical-align: middle !important;
+  border-color: #E5E5E5 !important;
+}
+
+.cart-product-thumbnail a {
+  display: block;
+  width: 68px;
+}
+
+.cart-product-thumbnail img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #EEE;
+}
+
+.cart-product-thumbnail img:hover {
+  border-color: #1ABC9C;
+}
+
+.cart-product-name a,.product-name a {
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+}
+
+.cart-product-name a:hover,.product-name a:hover {
+  color: #666;
+}
+
+.cart-product-price,.cart-product-quantity,.cart-product-subtotal {
+  text-align: center !important;
+}
+
+.cart-product-quantity .quantity {
+  display: inline-block;
+  margin: 0;
+  float: none;
+}
+
+/* ----------------------------------------------------------------
+	Events
+-----------------------------------------------------------------*/
+
+.parallax .iconlist li {
+  margin: 5px 0;
+}
+
+/* Individual Events
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+
+	Countdown
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Countdown
+-----------------------------------------------------------------*/
+
+/* Countdown - Medium
+-----------------------------------------------------------------*/
+
+/* Countdown - Large
+-----------------------------------------------------------------*/
+
+/* Countdown - Inline
+-----------------------------------------------------------------*/
+
+/* Countdown - Coming Soon
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Buttons
+-----------------------------------------------------------------*/
+
+.button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  margin: 5px;
+  padding: 0 22px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #1ABC9C;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.button-dark {
+  background-color: #444;
+}
+
+.button-light {
+  background-color: #EEE;
+  color: #333;
+  text-shadow: none !important;
+}
+
+.button:hover {
+  background-color: #444;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.button.button-dark:hover {
+  background-color: #1ABC9C;
+}
+
+.button.button-small {
+  padding: 0 17px;
+  font-size: 12px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.button.button-large {
+  padding: 0 26px;
+  font-size: 16px;
+  height: 46px;
+  line-height: 46px;
+}
+
+.button.button-xlarge {
+  padding: 0 32px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  height: 52px;
+  line-height: 52px;
+}
+
+.button.button-desc {
+  text-align: left;
+  padding: 24px 34px;
+  font-size: 22px;
+  height: auto;
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.button.button-desc span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'Crete Round', serif;
+  font-style: italic;
+  text-transform: none;
+}
+
+.button i {
+  position: relative;
+  top: 1px;
+  line-height: 1;
+  margin-right: 5px;
+  width: 16px;
+  text-align: center;
+}
+
+.button.tright i {
+  margin: 0 0 0 5px;
+}
+
+.button-small i {
+  margin-right: 4px;
+}
+
+.button-small.tright i {
+  margin: 0 0 0 4px;
+}
+
+.button-xlarge i {
+  top: 2px;
+  margin-right: 8px;
+}
+
+.button-xlarge.tright i {
+  margin: 0 0 0 8px;
+}
+
+.button.button-desc i {
+  top: 1px;
+  font-size: 48px;
+  width: 48px;
+  text-align: center;
+  margin-right: 12px;
+}
+
+.button.button-desc.tright i {
+  margin: 0 0 0 12px;
+}
+
+.button.button-desc div {
+  display: inline-block;
+}
+
+/* Buttons - Border
+-----------------------------------------------------------------*/
+
+/* Buttons - Border
+-----------------------------------------------------------------*/
+
+.button.button-3d {
+  border-radius: 3px;
+  border-bottom: 3px solid rgba(0,0,0,0.15);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.button.button-3d:hover {
+  background-color: #1ABC9C !important;
+  opacity: 0.9;
+}
+
+.button.button-3d.button-light:hover {
+  text-shadow: none;
+  color: #333;
+}
+
+/* Buttons - Icon Reveal
+-----------------------------------------------------------------*/
+
+/* Buttons - Promo 100% Width
+-----------------------------------------------------------------*/
+
+.button.button-full {
+  display: block;
+  width: 100%;
+  white-space: normal;
+  margin: 0;
+  height: auto;
+  line-height: 1.6;
+  padding: 30px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: none;
+  border-radius: 0;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.button.button-full.button-light {
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.button.button-full strong {
+  font-weight: 700;
+  border-bottom: 2px solid #EEE;
+}
+
+.button.button-full.button-light strong {
+  border-bottom-color: #333;
+}
+
+.button.button-full.button-light:hover strong {
+  border-bottom-color: #EEE;
+}
+
+/* Buttons - Circle
+-----------------------------------------------------------------*/
+
+/* Buttons - Fill Effect
+-----------------------------------------------------------------*/
+
+/* Buttons - Colors
+-----------------------------------------------------------------*/
+
+.button-green {
+  background-color: #59BA41;
+}
+
+.button-3d.button-green:hover {
+  background-color: #59BA41 !important;
+}
+
+.button-brown {
+  background-color: #774F38;
+}
+
+.button-3d.button-brown:hover {
+  background-color: #774F38 !important;
+}
+
+.button-pink {
+  background-color: #F89FA1;
+}
+
+.button-3d.button-pink:hover {
+  background-color: #F89FA1 !important;
+}
+
+.button-blue {
+  background-color: #1265A8;
+}
+
+.button-3d.button-blue:hover {
+  background-color: #1265A8 !important;
+}
+
+.button-black {
+  background-color: #111;
+}
+
+.button-3d.button-black:hover {
+  background-color: #111 !important;
+}
+
+/* Buttons - No Hover
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Promo Boxes
+-----------------------------------------------------------------*/
+
+/* Promo Uppercase
+-----------------------------------------------------------------*/
+
+/* Promo - with Border
+-----------------------------------------------------------------*/
+
+/* Promo - Light
+-----------------------------------------------------------------*/
+
+/* Promo - Dark
+-----------------------------------------------------------------*/
+
+/* Promo - Flat
+-----------------------------------------------------------------*/
+
+/* Promo - 100% Full Width
+-----------------------------------------------------------------*/
+
+/* Promo - Parallax
+-----------------------------------------------------------------*/
+
+/* Promo - Right Align
+-----------------------------------------------------------------*/
+
+/* Promo - with Border & Right Align
+-----------------------------------------------------------------*/
+
+/* Promo - Center Align
+-----------------------------------------------------------------*/
+
+/* Promo - Mini
+-----------------------------------------------------------------*/
+
+/* Promo - Mini - Center Align
+-----------------------------------------------------------------*/
+
+/* Promo - Mini - Right Align
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Featured Boxes
+-----------------------------------------------------------------*/
+
+/* Feature Box - Icon Large
+-----------------------------------------------------------------*/
+
+/* Feature Box - Icon Outline
+-----------------------------------------------------------------*/
+
+/* Feature Box - Icon Outline Large
+-----------------------------------------------------------------*/
+
+/* Feature Box - Icon Rounded
+-----------------------------------------------------------------*/
+
+/* Feature Box - Icon Rounded & Large
+-----------------------------------------------------------------*/
+
+/* Feature Box - Light Background
+-----------------------------------------------------------------*/
+
+/* Feature Box - Dark Background
+-----------------------------------------------------------------*/
+
+/* Feature Box - Border
+-----------------------------------------------------------------*/
+
+/* Feature Box - Border - Light
+-----------------------------------------------------------------*/
+
+/* Feature Box - Border - Dark
+-----------------------------------------------------------------*/
+
+/* Feature Box - Plain
+-----------------------------------------------------------------*/
+
+/* Feature Box - Center
+-----------------------------------------------------------------*/
+
+/* Feature Box - Center & Large Icons
+-----------------------------------------------------------------*/
+
+/* Feature Box - Center & Large Icons
+-----------------------------------------------------------------*/
+
+/* Feature Box - Right
+-----------------------------------------------------------------*/
+
+/* Feature Box - Subtitle
+-----------------------------------------------------------------*/
+
+/* Feature Box - Background
+-----------------------------------------------------------------*/
+
+/* Animated Icon Hovers
+-----------------------------------------------------------------*/
+
+/* Icon Effects - Bordered
+-----------------------------------------------------------------*/
+
+/* Media Featured Box
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Flipbox
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Process Steps
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Alerts
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Styled Icons
+-----------------------------------------------------------------*/
+
+
+/* Icon Size - Extra Large
+-----------------------------------------------------------------*/
+
+/* Icon Size - Extra Extra Large
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Icon Overlay
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Social Icons
+-----------------------------------------------------------------*/
+
+
+/* Social Icons - Rounded
+-----------------------------------------------------------------*/
+
+/* Social Icons - Borderless
+-----------------------------------------------------------------*/
+
+
+/* Social Icons - Dark
+-----------------------------------------------------------------*/
+
+
+/* Social Icons - Light
+-----------------------------------------------------------------*/
+
+/* Social Icons - Colored
+-----------------------------------------------------------------*/
+
+/* Social Icons - Large
+-----------------------------------------------------------------*/
+
+
+/* Social Icons - Small
+-----------------------------------------------------------------*/
+
+/* Social Icons - Sticky
+-----------------------------------------------------------------*/
+
+/* Social Icons - Sticky Right
+-----------------------------------------------------------------*/
+
+/* Social Icons - Share
+-----------------------------------------------------------------*/
+
+/* Social Icons Text Color
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Toggle
+-----------------------------------------------------------------*/
+
+.toggle {
+  display: block;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+/* Toggle - with Title Background
+-----------------------------------------------------------------*/
+
+/* Toggle - Bordered
+-----------------------------------------------------------------*/
+
+/* Toggle - FAQs
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Accordions
+-----------------------------------------------------------------*/
+
+/* Accordion - with Title Background
+-----------------------------------------------------------------*/
+
+/* Accordion - Bordered
+-----------------------------------------------------------------*/
+
+/* Accordion - Large
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Tabs
+-----------------------------------------------------------------*/
+
+.tabs {
+  position: relative;
+  margin: 0 0 30px 0;
+}
+
+ul.tab-nav:not(.tab-nav-lg) {
+  margin: 0;
+  border-bottom: 1px solid #DDD;
+  list-style: none;
+}
+
+ul.tab-nav:not(.tab-nav-lg) li {
+  float: left;
+  border: 1px solid #DDD;
+  border-bottom: 0;
+  border-left: 0;
+  height: 41px;
+  text-align: center;
+}
+
+ul.tab-nav:not(.tab-nav-lg) li:first-child {
+  margin-left: 15px;
+  border-left: 1px solid #DDD;
+}
+
+ul.tab-nav:not(.tab-nav-lg) li a {
+  display: block;
+  padding: 0 15px;
+  color: #444;
+  height: 40px;
+  line-height: 40px;
+  background-color: #F2F2F2;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Tabs - Alternate Nav
+-----------------------------------------------------------------*/
+
+.tabs.tabs-alt ul.tab-nav li {
+  border-color: transparent;
+}
+
+.tabs.tabs-alt ul.tab-nav li:first-child {
+  border-left: 0;
+}
+
+.tabs.tabs-alt ul.tab-nav li a {
+  background-color: #FFF;
+}
+
+/* Tabs - Top Border
+-----------------------------------------------------------------*/
+
+/* Tabs - Bottom Border
+-----------------------------------------------------------------*/
+
+.tabs.tabs-bb ul.tab-nav li {
+  border: 0;
+  margin: 0;
+}
+
+.tabs.tabs-bb ul.tab-nav li a {
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+/* Tabs - Navigation Style 2
+-----------------------------------------------------------------*/
+
+ul.tab-nav.tab-nav2 {
+  border-bottom: 0;
+}
+
+ul.tab-nav.tab-nav2 li {
+  border: 0;
+  margin-left: 10px;
+}
+
+ul.tab-nav.tab-nav2 li:first-child {
+  margin-left: 0;
+  border-left: 0;
+}
+
+ul.tab-nav.tab-nav2 li a {
+  background-color: #F5F5F5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs - Large Navigation
+-----------------------------------------------------------------*/
+
+ul.tab-nav-lg {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+ul.tab-nav-lg li {
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+}
+
+ul.tab-nav-lg li a {
+  display: inline-block;
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+ul.tab-nav.tab-nav-lg li i {
+  display: block;
+  font-size: 28px;
+  margin: 0 0 7px;
+}
+
+/* Tabs - Content Area
+-----------------------------------------------------------------*/
+
+.tab-container {
+  position: relative;
+  padding: 20px 0 0;
+}
+
+ul.tab-nav li a i {
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+/* Tabs - Bordered
+-----------------------------------------------------------------*/
+
+.tabs-bordered ul.tab-nav li:first-child {
+  margin-left: 0;
+}
+
+.tabs-bordered .tab-container {
+  border: 1px solid #DDD;
+  border-top: 0;
+  padding: 20px;
+}
+
+/* Tabs - Side Tabs
+-----------------------------------------------------------------*/
+
+.side-tabs ul.tab-nav {
+  float: left;
+  width: 200px;
+  padding: 20px 0;
+  border-bottom: 0;
+  border-right: 1px solid #DDD;
+}
+
+.side-tabs ul.tab-nav li {
+  float: none;
+  border: 1px solid #DDD;
+  border-right: 0;
+  border-top: 0;
+  height: auto;
+  text-align: left;
+}
+
+.side-tabs ul.tab-nav li:first-child {
+  margin-left: 0;
+  border-top: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+}
+
+.side-tabs ul.tab-nav li a {
+  height: auto;
+  line-height: 44px;
+}
+
+.side-tabs .tab-container {
+  overflow: hidden;
+  padding: 15px 0 0 20px;
+}
+
+/* Tabs - Side Tabs & Nav Style 2
+-----------------------------------------------------------------*/
+
+.side-tabs ul.tab-nav.tab-nav2 {
+  border: 0;
+}
+
+.side-tabs ul.tab-nav.tab-nav2 li {
+  border: 0;
+  margin: 6px 0 0;
+}
+
+.side-tabs ul.tab-nav.tab-nav2 li:first-child {
+  margin-top: 0;
+}
+
+.side-tabs ul.tab-nav.tab-nav2 li a {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs - Side Tabs & Bordered
+-----------------------------------------------------------------*/
+
+.tabs-bordered.side-tabs ul.tab-nav {
+  position: relative;
+  padding: 0;
+  z-index: 2;
+  margin-right: -1px;
+}
+
+.tabs-bordered.side-tabs ul.tab-nav li a {
+  height: auto;
+  line-height: 44px;
+}
+
+.tabs-bordered.side-tabs .tab-container {
+  overflow: hidden;
+  padding: 20px;
+  border-top: 1px solid #DDD;
+}
+
+/* ----------------------------------------------------------------
+	Side Navigation
+-----------------------------------------------------------------*/
+
+/* Chevrons */
+
+/* ----------------------------------------------------------------
+	FAQ List
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Clients
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Testimonials
+-----------------------------------------------------------------*/
+
+/* Testimonials - Grid
+-----------------------------------------------------------------*/
+
+/* Testimonials - Item
+-----------------------------------------------------------------*/
+
+/* Twitter - Small Scroller
+-----------------------------------------------------------------*/
+
+/* Testimonials - Full Width
+-----------------------------------------------------------------*/
+
+/* Testimonial - Section Scroller
+-----------------------------------------------------------------*/
+
+/* Testimonial - Pagination
+-----------------------------------------------------------------*/
+
+/* Testimonial - Full Scroller
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Team
+-----------------------------------------------------------------*/
+
+/* Team Center
+-----------------------------------------------------------------*/
+
+/* Team List
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Pricing Boxes
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - Title
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - Price
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - Features
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - Action
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - Best Price
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - Minimal
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - 5 Columns
+-----------------------------------------------------------------*/
+
+/* Pricing Boxes - Extended
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Counter
+-----------------------------------------------------------------*/
+
+.counter {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+
+.counter.counter-small {
+  font-size: 28px;
+}
+
+.counter.counter-large {
+  font-size: 56px;
+}
+
+.counter.counter-xlarge {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.counter + h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.counter.counter-small + h5 {
+  font-size: 13px;
+}
+
+.counter.counter-large + h5,.counter.counter-xlarge + h5 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.widget .counter + h5 {
+  opacity: 0.7;
+}
+
+/* ----------------------------------------------------------------
+	Animated Rounded Skills
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Skills Bar
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Quotes & Blockquotes
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Dropcaps & Highlights
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Text Rotater
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Owl Carousel CSS
+-----------------------------------------------------------------*/
+
+/* Owl Carousel - Controls
+-----------------------------------------------------------------*/
+
+.owl-carousel .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1;
+}
+
+/* Owl Carousel - Controls - Arrows
+-----------------------------------------------------------------*/
+
+
+/* Owl Carousel - Controls - Dots
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Overlays
+-----------------------------------------------------------------*/
+
+/* News Carousel Overlays
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Forms
+-----------------------------------------------------------------*/
+
+.sm-form-control {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 14px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 2px solid #DDD;
+  border-radius: 0 !important;
+  -webkit-transition: border-color ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s;
+  transition: border-color ease-in-out .15s;
+}
+
+.sm-form-control:focus {
+  border-color: #AAA;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.sm-form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.sm-form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.sm-form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.sm-form-control[disabled],.sm-form-control[readonly] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+
+.sm-form-control {
+  height: auto;
+}
+
+.form-control {
+  border-radius: 3px;
+}
+
+.form-control:active,.form-control:focus {
+  border-color: #999;
+  box-shadow: none;
+}
+
+label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+form .col_full,form .col_half,form .col_one_fifth,form .col_two_fifth,form .col_one_sixth {
+  margin-bottom: 25px;
+}
+
+/* ----------------------------------------------------------------
+	Contact Form
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Google Maps
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Google Custom Search
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Heading Styles
+-----------------------------------------------------------------*/
+
+/* Block Titles
+-----------------------------------------------------------------*/
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+/* Emphasis Title
+-----------------------------------------------------------------*/
+
+/* Justify Border Title
+-----------------------------------------------------------------*/
+
+/* Fancy Title - Center Align
+-----------------------------------------------------------------*/
+
+/* Fancy Title - Right Align
+-----------------------------------------------------------------*/
+
+
+/* Fancy Title - Bottom Short Border
+-----------------------------------------------------------------*/
+
+/* Fancy Title - Bottom Short Border
+-----------------------------------------------------------------*/
+
+/* Sub Heading
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Divider
+-----------------------------------------------------------------*/
+
+/* Divider - Icon Align Right
+-----------------------------------------------------------------*/
+
+/* Divider - Icon Align Center
+-----------------------------------------------------------------*/
+
+/* Short Divider - Icon Align Center
+-----------------------------------------------------------------*/
+
+/* Divider - Rounded Icon
+-----------------------------------------------------------------*/
+
+/* Divider - Rounded & Border
+-----------------------------------------------------------------*/
+
+/* Divider - Line Only
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Magazine Specific Classes
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Go To Top
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Error 404
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Landing Pages
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Preloaders
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Toastr Notifications
+-----------------------------------------------------------------*/
+
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+
+/*Responsive Design*/
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+#footer {
+  position: relative;
+  background-color: #EEE;
+  border-top: 5px solid rgba(0,0,0,0.2);
+}
+
+#footer .footer-widgets-wrap {
+  position: relative;
+  padding: 80px 0;
+}
+
+.footer-widgets-wrap .col_full,.footer-widgets-wrap .col_half,.footer-widgets-wrap .col_one_fifth,.footer-widgets-wrap .col_two_fifth,.footer-widgets-wrap .col_one_sixth {
+  margin-bottom: 0;
+}
+
+#copyrights {
+  padding: 40px 0;
+  background-color: #DDD;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#copyrights i.footer-icon {
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  width: 14px;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.copyright-links a {
+  display: inline-block;
+  margin: 0 3px;
+  color: #333;
+  border-bottom: 1px dotted #444;
+}
+
+.copyright-links a:hover {
+  color: #555;
+  border-bottom: 1px solid #666;
+}
+
+.copyrights-menu {
+  margin-bottom: 10px;
+}
+
+.copyrights-menu a {
+  font-size: 14px;
+  margin: 0 10px;
+  border-bottom: 0 !important;
+}
+
+#copyrights .col_half {
+  margin-bottom: 0 !important;
+}
+
+#copyrights a:first-child {
+  margin-left: 0;
+}
+
+#copyrights .tright a:last-child {
+  margin-right: 0;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* Tag Cloud
+-----------------------------------------------------------------*/
+
+/* Widget - Links
+-----------------------------------------------------------------*/
+
+/* Widget - Testimonial & Twitter
+-----------------------------------------------------------------*/
+
+/* Widget - Quick Contact Form
+-----------------------------------------------------------------*/
+
+/* Newsletter Widget
+-----------------------------------------------------------------*/
+
+/* Twitter Feed Widget
+-----------------------------------------------------------------*/
+
+/* Widget Filter Links
+-----------------------------------------------------------------*/
+
+.widget-filter-links ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.widget-filter-links .widget-filter-reset {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.widget:not(:first-child) .widget-filter-reset {
+  top: 50px;
+}
+
+.widget-filter-links .widget-filter-reset a {
+  color: red;
+}
+
+.widget-filter-links .widget-filter-reset.active-filter {
+  display: none;
+}
+
+.widget-filter-links li {
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.widget-filter-links li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.widget-filter-links li a {
+  display: block;
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.widget-filter-links li span {
+  position: absolute;
+  top: 1px;
+  left: auto;
+  right: 0;
+  font-size: 11px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #777;
+  background-color: #EEE;
+  border-radius: 50%;
+}
+
+.widget-filter-links li:hover a {
+  color: #777;
+}
+
+.widget-filter-links li.active-filter a {
+  font-weight: 700;
+}
+
+.widget-filter-links li.active-filter span {
+  color: #FFF;
+  background-color: #1ABC9C;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Navigation Tree
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Wedding
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Bootstrap Specific
+-----------------------------------------------------------------*/
+
+.table .info {
+  color: #31708f;
+}
+
+.btn-link,.page-link,.page-link:hover,.page-link:focus {
+  color: #1ABC9C;
+}
+
+.btn-link:hover,.btn-link:focus {
+  color: #222;
+}
+
+.page-item.active .page-link,.page-link:hover,.page-link:focus {
+  color: #FFF !important;
+  background-color: #1ABC9C !important;
+  border-color: #1ABC9C !important;
+}
+
+/* ----------------------------------------------------------------
+	Cookie Notification
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Stretched Layout
+-----------------------------------------------------------------*/
+
+.stretched #wrapper {
+  width: 100%;
+  margin: 0;
+  box-shadow: none;
+}
+
+/* ----------------------------------------------------------------
+	Page Transitions
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	HTML5 Youtube Video Backgrounds
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Datepicker Component
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Star Ratings Component
+-----------------------------------------------------------------*/

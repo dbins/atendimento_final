@@ -1,0 +1,1406 @@
+{
+  "acoes":  [{
+    "codigo": 1,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  },
+  {
+    "codigo": 2,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  },
+  {
+    "codigo": 3,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  },
+  {
+    "codigo": 4,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  },
+  {
+    "codigo": 5,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  },
+  {
+    "codigo": 6,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  },
+  {
+    "codigo": 7,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  },
+  {
+    "codigo": 8,
+    "acao": "nome da Ação",
+    "data_cadastro": "19/08/2019",
+    "data_atualizacao": "19/08/2019",
+    "status": "Aderiu"
+  }],
+
+ "entidade":  {
+ "codigo": 1,
+ "CPF": "11111111111",
+ "categoria": "Premium",
+ "subcategoria": "Gold",
+ "pontos": 10000,
+ "status_entidade": 2476,
+ "status_conta": 36,
+ "descricao_status_conta": "Consulta e Troca",
+ "descricao_status_entidade": "Ativo",
+ "nome": "BINS do TI",
+ "data_nascimento": "01/04/1970",
+ "sexo": 23,
+ "descricao_sexo": "Masculino",
+ "estado_civil": 0,
+ "descricao_estado_civil": "Não informado",
+ "cargo": 0,
+ "descricao_cargo": "Gerente",
+ "email": "daniel.bins@teste.com.br.com.br",
+ "email_capturado": "daniel.bins@teste.com.br"
+ },
+
+ "cargos": [
+    { "codigo": 1, "titulo": "Gerente" },
+    { "codigo": 2, "titulo": "Vendedor" },
+    { "codigo": 3, "titulo": "Proprietário" }
+  ],
+
+"estadocivil" : [
+    { "codigo": 1, "titulo": "Solteiro" },
+    { "codigo": 2, "titulo": "Casado" },
+    { "codigo": 3, "titulo": "Divorciado" }
+  ],
+
+"sexo": [
+    { "codigo": 1, "titulo": "Masculino" },
+    { "codigo": 2, "titulo": "Feminino" },
+    { "codigo": 3, "titulo": "Não informado" }
+  ],
+
+
+
+"carrinho": [
+    {"codigo": 1, "produto": "Pink Printed Dress", "imagem": "images/shop/thumbs/small/dress-3.jpg", "valor_unitario": 19.990, "quantidade": 2, "total": 39.980},
+    {"codigo": 2, "produto": "Checked Canvas Shoes", "imagem": "images/shop/thumbs/small/shoes-2.jpg", "valor_unitario": 24.900, "quantidade": 1, "total": 24.990},
+    {"codigo": 3, "produto": "Blue Men Tshirt", "imagem": "images/shop/thumbs/small/tshirt-2.jpg", "valor_unitario": 13.990, "quantidade": 3, "total": 41.970}
+  ],
+
+"carrinho_endereco": {
+    "codigo": 1,
+    "endereco": "Rua X",
+	"numero": "10",
+    "complemento": "10",
+    "bairro": "Bairro Y",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "CEP": "00000000"
+  },
+
+
+"produto": {
+    "codigo": 1,
+    "codigo_interno": "P1",
+    "categoria": "Vestuário",
+    "imagem": "images/shop/dress/1.jpg",
+    "imagem2": "images/shop/dress/1-1.jpg",
+    "produto": "Checked Short Dress",
+    "pontos": 24.99,
+    "codigo_categoria": 1,
+    "pontos_desconto": 21,
+    "descricao":
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero velit id eaque ex quae laboriosam nulla optio doloribus! Perspiciatis, libero, neque, perferendis at nisi optio dolor!<BR>Perspiciatis ad eveniet ea quasi debitis quos laborum eum reprehenderit eaque explicabo assumenda rem modi."
+  },
+
+"categorias": [
+    { "codigo": 1, "titulo": "Anúncio em Mídia" },
+    { "codigo": 2, "titulo": "Cápsulas E Acessórios" },
+    { "codigo": 3, "titulo": "Cursos e Consultorias" },
+    { "codigo": 4, "titulo": "Eletrônicos" },
+    { "codigo": 5, "titulo": "Eletroportáteis" },
+    { "codigo": 6, "titulo": "Ferramentas" },
+    { "codigo": 7, "titulo": "Informação e Cultura" },
+    { "codigo": 8, "titulo": "Informática" },
+    { "codigo": 9, "titulo": "Materiais De Escritório" },
+    { "codigo": 10, "titulo": "Produtos personalizados" },
+    { "codigo": 11, "titulo": "Recarga de celular" },
+    { "codigo": 12, "titulo": "Serviços" },
+    { "codigo": 13, "titulo": "Serviços de Mercado" },
+    { "codigo": 14, "titulo": "Telefonia" },
+    { "codigo": 15, "titulo": "Volta às Aulas" }
+  ],
+
+  "catalogo": [
+      {
+        "codigo": 1,
+        "codigo_interno": "P1",
+        "imagem": "images/shop/dress/1.jpg",
+        "imagem2": "images/shop/dress/1-1.jpg",
+        "produto": "Checked Short Dress",
+        "pontos": 24.99,
+        "pontos_desconto": 21
+      },
+      {
+        "codigo": 2,
+        "codigo_interno": "P2",
+        "imagem": "images/shop/pants/1-1.jpg",
+        "imagem2": "images/shop/pants/1.jpg",
+        "produto": "Slim Fit Chinos",
+        "pontos": 39.99,
+        "pontos_desconto": 21
+      },
+      {
+        "codigo": 4,
+        "codigo_interno": "P4",
+        "imagem": "images/shop/dress/2.jpg",
+        "imagem2": "images/shop/dress/2-2.jpg",
+        "produto": "Light Blue Denim Dress",
+        "pontos": 19.95,
+        "pontos_desconto": 18
+      },
+      {
+        "codigo": 5,
+        "codigo_interno": "P5",
+        "imagem": "images/shop/dress/1.jpg",
+        "imagem2": "images/shop/dress/1-1.jpg",
+        "produto": "Checked Short Dress",
+        "pontos": 24.99,
+        "pontos_desconto": 21
+      },
+      {
+        "codigo": 6,
+        "codigo_interno": "P6",
+        "imagem": "images/shop/pants/1-1.jpg",
+        "imagem2": "images/shop/pants/1.jpg",
+        "produto": "Slim Fit Chinos",
+        "pontos": 39.99,
+        "pontos_desconto": 30
+      },
+      {
+        "codigo": 3,
+        "codigo_interno": "P3",
+        "imagem": "images/shop/dress/2.jpg",
+        "imagem2": "images/shop/dress/2-2.jpg",
+        "produto": "Light Blue Denim Dress",
+        "pontos": 19.95,
+        "pontos_desconto": 15
+      },
+      {
+        "codigo": 7,
+        "codigo_interno": "P7",
+        "imagem": "images/shop/dress/1.jpg",
+        "imagem2": "images/shop/dress/1-1.jpg",
+        "produto": "Checked Short Dress",
+        "pontos": 24.99,
+        "pontos_desconto": 20
+      },
+      {
+        "codigo": 8,
+        "codigo_interno": "P8",
+        "imagem": "images/shop/pants/1-1.jpg",
+        "imagem2": "images/shop/pants/1.jpg",
+        "produto": "Slim Fit Chinos",
+        "pontos": 39.99,
+        "pontos_desconto": 30
+      },
+      {
+        "codigo": 9,
+        "codigo_interno": "P9",
+        "imagem": "images/shop/dress/2.jpg",
+        "imagem2": "images/shop/dress/2-2.jpg",
+        "produto": "Light Blue Denim Dress",
+        "pontos": 19.95,
+        "pontos_desconto": 15
+      },
+      {
+        "codigo": 10,
+        "codigo_interno": "P10",
+        "imagem": "images/shop/dress/1.jpg",
+        "imagem2": "images/shop/dress/1-1.jpg",
+        "produto": "Checked Short Dress",
+        "pontos": 24.99,
+        "pontos_desconto": 21
+      },
+      {
+        "codigo": 11,
+        "codigo_interno": "P11",
+        "imagem": "images/shop/pants/1-1.jpg",
+        "imagem2": "images/shop/pants/1.jpg",
+        "produto": "Slim Fit Chinos",
+        "pontos": 39.99,
+        "pontos_desconto": 30
+      },
+      {
+        "codigo": 12,
+        "codigo_interno": "P12",
+        "imagem": "images/shop/dress/2.jpg",
+        "imagem2": "images/shop/dress/2-2.jpg",
+        "produto": "Light Blue Denim Dress",
+        "pontos": 19.95,
+        "pontos_desconto": 15
+      }
+    ],
+
+    "contatos": [
+        {
+          "id": 1,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 2,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 3,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 4,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 5,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 1,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 2,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 3,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 4,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        },
+        {
+          "id": 5,
+          "email": "teste@teste.com.br",
+          "ddd": "11",
+          "telefone": "1111111111",
+          "tipo": "Elogio",
+          "mensagem":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed pharetra diam. Donec pellentesque nisl sapien, eu porta purus cursus vel. Vivamus iaculis neque pretium, condimentum neque eu, pellentesque magna.",
+          "data": "19/08/2019"
+        }
+      ],
+
+      "endereco": [
+          {
+            "codigo": 1,
+            "tipo": "Residencial",
+            "endereco": "Rua teste",
+            "numero": "10",
+            "complemento": "Teste",
+            "bairro": "Bairro teste",
+            "cidade": "SÃO PAULO",
+            "estado": "SP",
+            "CEP": "00000000",
+			"data_cadastro": "20/08/2019",
+            "data_atualizacao": "20/08/2019",
+            "excluido": "N"
+          },
+          {
+            "codigo": 2,
+            "tipo": "Comercial",
+            "endereco": "Rua teste",
+            "numero": "10",
+            "complemento": "Teste",
+            "bairro": "Bairro teste",
+            "cidade": "SÃO PAULO",
+            "estado": "SP",
+            "CEP": "00000000",
+			"data_cadastro": "20/08/2019",
+            "data_atualizacao": "20/08/2019",
+            "excluido": "N"
+          },
+          {
+            "codigo": 3,
+            "tipo": "Contato",
+            "endereco": "Rua teste",
+            "numero": "10",
+            "complemento": "Teste",
+            "bairro": "Bairro teste",
+            "cidade": "SÃO PAULO",
+            "estado": "SP",
+            "CEP": "00000000",
+			"data_cadastro": "20/08/2019",
+            "data_atualizacao": "20/08/2019",
+            "excluido": "N"
+          }
+        ],
+
+        "expirados": [
+            { "periodo": "01/2019", "pontos": 10 },
+            { "periodo": "02/2019", "pontos": 10 },
+            { "periodo": "03/2019", "pontos": 10 },
+            { "periodo": "04/2019", "pontos": 10 },
+            { "periodo": "05/2019", "pontos": 10 },
+            { "periodo": "06/2019", "pontos": 10 },
+            { "periodo": "07/2019", "pontos": 10 },
+            { "periodo": "08/2019", "pontos": 10 }
+          ],
+
+          "historico": [
+              {
+                "codigo": 1,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              },
+              {
+                "codigo": 2,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              },
+              {
+                "codigo": 3,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              },
+              {
+                "codigo": 4,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              },
+              {
+                "codigo": 5,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              },
+              {
+                "codigo": 6,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              },
+              {
+                "codigo": 7,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              },
+              {
+                "codigo": 8,
+                "usuario": "Bins",
+                "data": "20/08/2019",
+				"motivo": "Somente Consulta",
+                "conteudo":
+                  "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+              }
+            ],
+
+
+            "log": [
+                {
+                  "codigo": 1,
+                  "data": "20/08/2019",
+                  "tabela": "entidades",
+                  "campo": "ent_status",
+                  "de": "Inativo",
+                  "para": "Ativo",
+                  "alterado_por": "Bins"
+                },
+                {
+                  "codigo": 2,
+                  "data": "20/08/2019",
+                  "tabela": "entidades",
+                  "campo": "ent_status",
+                  "de": "Inativo",
+                  "para": "Ativo",
+                  "alterado_por": "Bins"
+                },
+                {
+                  "codigo": 3,
+                  "data": "20/08/2019",
+                  "tabela": "entidades",
+                  "campo": "ent_status",
+                  "de": "Inativo",
+                  "para": "Ativo",
+                  "alterado_por": "Bins"
+                },
+                {
+                  "codigo": 4,
+                  "data": "20/08/2019",
+                  "tabela": "entidades",
+                  "campo": "ent_status",
+                  "de": "Inativo",
+                  "para": "Ativo",
+                  "alterado_por": "Bins"
+                },
+                {
+                  "codigo": 5,
+                  "data": "20/08/2019",
+                  "tabela": "entidades",
+                  "campo": "ent_status",
+                  "de": "Inativo",
+                  "para": "Ativo",
+                  "alterado_por": "Bins"
+                },
+                {
+                  "codigo": 6,
+                  "data": "20/08/2019",
+                  "tabela": "entidades",
+                  "campo": "ent_status",
+                  "de": "Inativo",
+                  "para": "Ativo",
+                  "alterado_por": "Bins"
+                }
+              ],
+
+              "ocorrencias": [
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  },
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  },
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  },
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  },
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  },
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  },
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  },
+                  {
+                    "numero": 10,
+                    "abertura": "19/08/2019",
+                    "assunto": "Entrega de Brinde",
+                    "aberta_por": "Bins",
+                    "encaminhada_para": "Daniel Bins",
+                    "cliente": "Asterix",
+                    "codigo_cliente": 10,
+                    "CPF": "11111111111",
+                    "status": "Pendente",
+                    "encerrada": "",
+                    "CNPJ_Loja": "00000000000000",
+                    "ultima_interacao": "19/08/2019",
+                    "qtde_de_dias": 1
+                  }
+                ],
+
+              "ocorrencias_assunto": [
+                  { "codigo": 1, "titulo": "Assunto 1" },
+                  { "codigo": 2, "titulo": "Assunto 2" },
+                  { "codigo": 3, "titulo": "Assunto 3" },
+                  { "codigo": 4, "titulo": "Assunto 4" },
+                  { "codigo": 5, "titulo": "Assunto 5" },
+                  { "codigo": 6, "titulo": "Assunto 6" },
+                  { "codigo": 7, "titulo": "Assunto 7" }
+                ],
+
+              "ocorrencias_status": [
+                  { "codigo": 1, "titulo": "Status 1" },
+                  { "codigo": 2, "titulo": "Status 2" },
+                  { "codigo": 3, "titulo": "Status 3" },
+                  { "codigo": 4, "titulo": "Status 4" },
+                  { "codigo": 5, "titulo": "Status 5" },
+                  { "codigo": 6, "titulo": "Status 6" },
+                  { "codigo": 7, "titulo": "Status 7" }
+                ],
+
+              "ocorrenciasEncaminhada":[
+                  { "codigo": 1, "titulo": "Usuário 1" },
+                  { "codigo": 2, "titulo": "Usuário 2" },
+                  { "codigo": 3, "titulo": "Usuário 3" },
+                  { "codigo": 4, "titulo": "Usuário 4" },
+                  { "codigo": 5, "titulo": "Usuário 5" },
+                  { "codigo": 6, "titulo": "Usuário 6" },
+                  { "codigo": 7, "titulo": "Usuário 7" }
+                ],
+
+              "ocorrencias_tipo": [
+                  { "codigo": 1, "titulo": "Ações" },
+                  { "codigo": 2, "titulo": "Alteração de Cadastro" },
+                  { "codigo": 3, "titulo": "Elogio" },
+                  { "codigo": 4, "titulo": "Exceção" },
+                  { "codigo": 5, "titulo": "Informação" },
+                  { "codigo": 6, "titulo": "Reclamação" },
+                  { "codigo": 7, "titulo": "Solicitação" },
+                  { "codigo": 8, "titulo": "Sugestão" }
+                ],
+
+              "ocorrencias_total":  {
+                  "pendentes": 1,
+                  "total": 2,
+                  "pendentes24h": 3,
+                  "pendentes72h": 4,
+                  "pendentesacima72": 5
+                },
+
+              "ocorrencia": {
+                  "numero": 1,
+                  "tipo": 1,
+                  "cliente": "Bins",
+                  "codigo_cliente": 1,
+                  "CPF": "11111111111",
+                  "telefone": "(11)1111-1111",
+                  "assunto": 1,
+                  "status": 1,
+                  "encaminhar": 1,
+                  "data": 1,
+                  "usuario": "Bins",
+                  "codigo_usuario": 1,
+                  "historico": [
+                    {
+                      "data": "19/08/2019",
+                      "usuario": "Bins",
+                      "resposta":
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ultrices nibh, at dictum quam. In sagittis, mauris nec dapibus varius, elit diam porta massa, ac pretium massa dui at est. Nullam suscipit rhoncus nisi sed lacinia. Morbi at ipsum sed tellus porta bibendum ac sit amet eros."
+                    },
+                    {
+                      "data": "19/08/2019",
+                      "usuario": "Bins",
+                      "resposta":
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ultrices nibh, at dictum quam. In sagittis, mauris nec dapibus varius, elit diam porta massa, ac pretium massa dui at est. Nullam suscipit rhoncus nisi sed lacinia. Morbi at ipsum sed tellus porta bibendum ac sit amet eros."
+                    },
+                    {
+                      "data": "19/08/2019",
+                      "usuario": "Bins",
+                      "resposta":
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ultrices nibh, at dictum quam. In sagittis, mauris nec dapibus varius, elit diam porta massa, ac pretium massa dui at est. Nullam suscipit rhoncus nisi sed lacinia. Morbi at ipsum sed tellus porta bibendum ac sit amet eros."
+                    },
+                    {
+                      "data": "19/08/2019",
+                      "usuario": "Bins",
+                      "resposta":
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ultrices nibh, at dictum quam. In sagittis, mauris nec dapibus varius, elit diam porta massa, ac pretium massa dui at est. Nullam suscipit rhoncus nisi sed lacinia. Morbi at ipsum sed tellus porta bibendum ac sit amet eros."
+                    },
+                    {
+                      "data": "19/08/2019",
+                      "usuario": "Bins",
+                      "resposta":
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ultrices nibh, at dictum quam. In sagittis, mauris nec dapibus varius, elit diam porta massa, ac pretium massa dui at est. Nullam suscipit rhoncus nisi sed lacinia. Morbi at ipsum sed tellus porta bibendum ac sit amet eros."
+                    }
+                  ]
+                },
+
+                "pausa": [
+                    {"codigo": 1, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10},
+                    {"codigo": 2, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10},
+                    {"codigo": 3, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10},
+                    {"codigo": 4, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10},
+                    {"codigo": 5, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10},
+                    {"codigo": 6, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10},
+                    {"codigo": 7, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10},
+                    {"codigo": 8, "abertura": "08:00", "encerramento": "08:10", "motivo": "Lanche", "minutos": 10}
+                  ],
+
+                  "contas": [
+                      {
+                        "codigo": 1,
+                        "conta": "11111111",
+                        "produto": "Fidelidade",
+                        "descricao": "Normal",
+                        "status": "A",
+                        "bloq1": "B",
+                        "bloq2": "C",
+                        "vencimento": "20/08/2019",
+                        "validade": "20/08/2019",
+                        "cadastro": "20/08/2019",
+                        "atualizacao": "20/08/2019"
+                      },
+                      {
+                        "codigo": 2,
+                        "conta": "11111111",
+                        "produto": "Fidelidade",
+                        "descricao": "Normal",
+                        "status": "A",
+                        "bloq1": "B",
+                        "bloq2": "C",
+                        "vencimento": "20/08/2019",
+                        "validade": "20/08/2019",
+                        "cadastro": "20/08/2019",
+                        "atualizacao": "20/08/2019"
+                      },
+                      {
+                        "codigo": 3,
+                        "conta": "11111111",
+                        "produto": "Fidelidade",
+                        "descricao": "Normal",
+                        "status": "A",
+                        "bloq1": "B",
+                        "bloq2": "C",
+                        "vencimento": "20/08/2019",
+                        "validade": "20/08/2019",
+                        "cadastro": "20/08/2019",
+                        "atualizacao": "20/08/2019"
+                      }
+                    ],
+
+                  "cartoes": [
+                      {
+                        "codigo": 1,
+                        "cartao": "11111111",
+                        "nome": "BINS do TI",
+                        "titular": "SIM",
+                        "status": "A",
+                        "bloqueio": "A",
+                        "cadastro": "20/08/2019",
+                        "atualizacao": "20/08/2019"
+                      },
+                      {
+                        "codigo": 2,
+                        "cartao": "11111111",
+                        "nome": "BINS do TI",
+                        "titular": "SIM",
+                        "status": "A",
+                        "bloqueio": "A",
+                        "cadastro": "20/08/2019",
+                        "atualizacao": "20/08/2019"
+                      }
+                    ],
+
+                  "saldo": [
+                      {
+                        "codigo": 1,
+                        "cartao": "11111111",
+						"pontos": 1000,
+                        "vinculado": 0,
+                        "bonus": 500,
+                        "premio": 0,
+                        "expirados": 0,
+                        "total": 1500
+                      }
+                    ],
+
+                  "pontos": [
+                      { "codigo": 1, "data": "20/08/2019", "pontos": 50, "tipo": "Ação Premiada" },
+                      { "codigo": 2, "data": "19/08/2019", "pontos": 50, "tipo": "Ação Premiada" },
+                      { "codigo": 3, "data": "15/08/2019", "pontos": 20, "tipo": "Ação Premiada" },
+                      { "codigo": 4, "data": "14/08/2019", "pontos": 50, "tipo": "Ação Premiada" },
+                      { "codigo": 5, "data": "13/08/2019", "pontos": 30, "tipo": "Ação Premiada" },
+                      { "codigo": 6, "data": "10/08/2019", "pontos": 50, "tipo": "Ação Premiada" },
+                      { "codigo": 7, "data": "08/08/2019", "pontos": 50, "tipo": "Ação Premiada" },
+                      { "codigo": 8, "data": "07/08/2019", "pontos": 150, "tipo": "Ação Premiada" }
+                    ],
+
+                  "bonus": [
+                      { "codigo": 1, "data": "20/08/2019", "pontos": 50, "tipo": "Bônus de Ativação" },
+                      { "codigo": 2, "data": "19/08/2019", "pontos": 50, "tipo": "Bônus de Indicação" },
+                      { "codigo": 3, "data": "15/08/2019", "pontos": 20, "tipo": "Bônus de Indicação" },
+                      { "codigo": 4, "data": "14/08/2019", "pontos": 50, "tipo": "Bônus de Cadastro" }
+                    ],
+
+                    "resgates": [
+                        {
+                          "numero": 1,
+						  "codigo_item": 1,
+                          "tipo": "Troca",
+                          "data": "19/08/2019",
+                          "origem": "Central de Atendimento",
+                          "codigo_produto": 1,
+                          "descricao": "Bola Quadrada",
+                          "pontos": 10000,
+                          "qtde": 1,
+                          "sem_pontos": "N",
+                          "posta_restante": "N",
+                          "agenda": "N",
+                          "status": "Pendente",
+						  "codigo_status": 841,
+                          "nota_fiscal": "",
+                          "envio": "",
+                          "tipo_entrega": ""
+                        },
+                        {
+                          "numero": 2,
+						  "codigo_item": 2,
+                          "tipo": "Troca",
+                          "data": "19/08/2019",
+                          "origem": "Aplicativo",
+                          "codigo_produto": 1,
+                          "descricao": "Bola Quadrada",
+                          "pontos": 10000,
+                          "qtde": 1,
+                          "sem_pontos": "N",
+                          "posta_restante": "N",
+                          "agenda": "N",
+                          "status": "Pendente",
+						  "codigo_status": 841,
+                          "nota_fiscal": "",
+                          "envio": "",
+                          "tipo_entrega": ""
+                        },
+                        {
+                          "numero": 3,
+						  "codigo_item": 3,
+                          "tipo": "Troca",
+                          "data": "19/08/2019",
+                          "origem": "Site",
+                          "codigo_produto": 1,
+                          "descricao": "Bola Quadrada",
+                          "pontos": 10000,
+                          "qtde": 1,
+                          "sem_pontos": "N",
+                          "posta_restante": "N",
+                          "agenda": "N",
+                          "status": "Pendente",
+						  "codigo_status": 841,
+                          "nota_fiscal": "",
+                          "envio": "",
+                          "tipo_entrega": ""
+                        },
+                        {
+                          "numero": 4,
+						  "codigo_item": 4,
+                          "tipo": "Troca",
+                          "data": "19/08/2019",
+                          "origem": "Central de Atendimento",
+                          "codigo_produto": 1,
+                          "descricao": "Bola Quadrada",
+                          "pontos": 10000,
+                          "qtde": 1,
+                          "sem_pontos": "N",
+                          "posta_restante": "N",
+                          "agenda": "N",
+                          "status": "Pendente",
+						  "codigo_status": 841,
+                          "nota_fiscal": "",
+                          "envio": "",
+                          "tipo_entrega": ""
+                        }
+                      ],
+                      "scripts": [
+                          {
+                            "codigo": 1,
+                            "nome": "Atendimento Receptivo - Proprietário e Balconista",
+                            "conteudo":
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula sollicitudin libero vitae scelerisque. Fusce aliquet ut massa ut egestas. Curabitur ullamcorper nulla a faucibus venenatis. Praesent ut volutpat libero. Cras suscipit mattis efficitur. Suspendisse auctor justo sit amet volutpat egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ultricies fermentum est vitae finibus. Donec vel metus et massa pellentesque condimentum. Quisque tempus gravida risus eu molestie. Vivamus felis elit, rhoncus eget felis et, sodales pulvinar lacus.     Donec lobortis quis urna sit amet vehicula. Duis in nulla rutrum, venenatis ligula at, sodales erat. Morbi at semper est, eu egestas velit. Vivamus mollis augue nisl, sed molestie lorem bibendum quis. Donec ac pretium massa, sed ultricies metus. In porttitor venenatis convallis. Phasellus euismod sed odio eu maximus."
+                          },
+                          { "codigo": 2, "nome": "Atendimento Receptivo Vendedores", "conteudo": "" },
+                          { "codigo": 3, "nome": "Banner Dashboard Vendedores", "conteudo": "" },
+                          { "codigo": 4, "nome": "CONECTOR", "conteudo": "" },
+                          { "codigo": 5, "nome": "FALE CONOSCO", "conteudo": "" },
+                          {
+                            "codigo": 6,
+                            "nome": "FAQ Central de Atendimento - PROGRAMA JS+",
+                            "conteudo": ""
+                          },
+                          {
+                            "codigo": 7,
+                            "nome": "Gabarito Papo de Balcão - Equipe de Vendas",
+                            "conteudo": ""
+                          },
+                          { "codigo": 8, "nome": "Gabarito Papo de Balcão - Proprietário", "conteudo": "" },
+                          { "codigo": 9, "nome": "LISTA DE HOME CENTERS BLOQUEADOS", "conteudo": "" },
+                          {
+                            "codigo": 10,
+                            "nome": "NOVA ORIENTAÇÃO DE SCRIPT - OPÇÃO VENDEDOR",
+                            "conteudo": ""
+                          },
+                          { "codigo": 11, "nome": "NOVOS PROCEDIMENTOS JS+ VAREJO", "conteudo": "" },
+                          { "codigo": 12, "nome": "OBJEÇÕES VISITA DO TÉCNICO", "conteudo": "" },
+                          { "codigo": 13, "nome": "Respostas oficiais - rollout", "conteudo": "" },
+                          {
+                            "codigo": 14,
+                            "nome": "Script - Ativo Lojas que pararam de transmitir",
+                            "conteudo": ""
+                          },
+                          { "codigo": 15, "nome": "SCRIPT - ATIVO NOVA BASE ELEGÍVEIS", "conteudo": "" },
+                          { "codigo": 16, "nome": "SCRIPT - O QUE É CONECTOR", "conteudo": "" },
+                          { "codigo": 17, "nome": "SCRIPT - O QUE É O PROGRAMA JS+", "conteudo": "" },
+                          { "codigo": 18, "nome": "TREINAMENTOS", "conteudo": "" }
+                        ],
+                        "sms": [
+                            {
+                              "id": 1,
+                              "tipo": "Envio",
+                              "celular": "111111111111",
+                              "status": "enviado",
+                              "data": "19/08/2019",
+                              "mensagem": "Mensagem do SMS"
+                            },
+                            {
+                              "id": 2,
+                              "tipo": "Envio",
+                              "celular": "111111111111",
+                              "status": "enviado",
+                              "data": "19/08/2019",
+                              "mensagem": "Mensagem do SMS"
+                            },
+                            {
+                              "id": 3,
+                              "tipo": "Envio",
+                              "celular": "111111111111",
+                              "status": "enviado",
+                              "data": "19/08/2019",
+                              "mensagem": "Mensagem do SMS"
+                            },
+                            {
+                              "id": 4,
+                              "tipo": "Envio",
+                              "celular": "111111111111",
+                              "status": "enviado",
+                              "data": "19/08/2019",
+                              "mensagem": "Mensagem do SMS"
+                            },
+                            {
+                              "id": 5,
+                              "tipo": "Envio",
+                              "celular": "111111111111",
+                              "status": "enviado",
+                              "data": "19/08/2019",
+                              "mensagem": "Mensagem do SMS"
+                            },
+                            {
+                              "id": 6,
+                              "tipo": "Envio",
+                              "celular": "111111111111",
+                              "status": "enviado",
+                              "data": "19/08/2019",
+                              "mensagem": "Mensagem do SMS"
+                            }
+                          ],
+                          "telefone": [
+                              {
+                                "codigo": 1,
+                                "tipo": "Residencial",
+                                "ddd": "11",
+                                "telefone": "11111111",
+                                "data_cadastro": "20/08/2019",
+                                "data_atualizacao": "20/08/2019",
+								"excluido": "N"
+                              },
+                              {
+                                "codigo": 2,
+                                "tipo": "Comercial",
+                                "ddd": "11",
+                                "telefone": "11111111",
+                                "data_cadastro": "20/08/2019",
+                                "data_atualizacao": "20/08/2019",
+								"excluido": "N"
+                              },
+                              {
+                                "codigo": 3,
+                                "tipo": "Celular",
+                                "ddd": "11",
+                                "telefone": "11111111",
+                                "data_cadastro": "20/08/2019",
+                                "data_atualizacao": "20/08/2019",
+								"excluido": "N"
+                              }
+                            ],
+                            "validades": [
+                                { "periodo": "01/2019", "pontos": 10 },
+                                { "periodo": "02/2019", "pontos": 10 },
+                                { "periodo": "03/2019", "pontos": 10 },
+                                { "periodo": "04/2019", "pontos": 10 },
+                                { "periodo": "05/2019", "pontos": 10 },
+                                { "periodo": "06/2019", "pontos": 10 },
+                                { "periodo": "07/2019", "pontos": 10 },
+                                { "periodo": "08/2019", "pontos": 10 }
+                              ],
+							  	 "endereco_tipo": [
+    {
+      "codigo": 32,
+      "titulo": "Residencial"
+    },
+    {
+      "codigo": 33,
+      "titulo": "Comercial"
+    },
+    {
+      "codigo": 34,
+      "titulo": "Entrega"
+    }
+  ],
+
+  "telefone_tipo": [
+    {
+      "codigo": 515,
+      "titulo": "Residencial"
+    },
+    {
+      "codigo": 516,
+      "titulo": "Comercial"
+    },
+    {
+      "codigo": 727,
+      "titulo": "Celular"
+    }
+  ],
+
+   "motivos": [
+    {
+      "codigo": 1,
+      "titulo": "Elogio",
+      "motivos": [
+        { "codigo": 1, "titulo": "Opção 1" },
+        { "codigo": 2, "titulo": "Opção 2" },
+        { "codigo": 3, "titulo": "Opção 3" },
+        { "codigo": 4, "titulo": "Opção 4" }
+      ]
+    },
+    {
+      "codigo": 2,
+      "titulo": "Informação",
+      "motivos": [
+        { "codigo": 5, "titulo": "Opção 5" },
+        { "codigo": 6, "titulo": "Opção 6" },
+        { "codigo": 7, "titulo": "Opção 7" },
+        { "codigo": 8, "titulo": "Opção 8" }
+      ]
+    },
+    {
+      "codigo": 3,
+      "titulo": "Reclamação",
+      "motivos": [
+        { "codigo": 9, "titulo": "Opção 9" },
+        { "codigo": 10, "titulo": "Opção 10" },
+        { "codigo": 11, "titulo": "Opção 11" },
+        { "codigo": 12, "titulo": "Opção 12" }
+      ]
+    },
+    {
+      "codigo": 4,
+      "titulo": "Problemas no site",
+      "motivos": [
+        { "codigo": 13, "titulo": "Opção 13" },
+        { "codigo": 14, "titulo": "Opção 14" },
+        { "codigo": 15, "titulo": "Opção 15" },
+        { "codigo": 16, "titulo": "Opção 16" }
+      ]
+    }
+  ],
+
+   "pausa_tipo": [
+    { "codigo": 1, "titulo": "Lanche" },
+    { "codigo": 2, "titulo": "Particular" },
+    { "codigo": 3, "titulo": "Pós-Atendimento" },
+    { "codigo": 4, "titulo": "Reunião" }
+  ],
+
+  "discador": { "entidade": 1 },
+  "acoes_config": [
+    {
+      "codigo": 1,
+      "acao": "Ação 1",
+      "tipo": "Pesquisa",
+      "data_inicial": "23/09/2019",
+      "data_final": "23/09/2019",
+      "status": "Ativa"
+    },
+    {
+      "codigo": 2,
+      "acao": "Ação 2",
+      "tipo": "Pesquisa",
+      "data_inicial": "23/09/2019",
+      "data_final": "23/09/2019",
+      "status": "Ativa"
+    },
+    {
+      "codigo": 3,
+      "acao": "Ação 3",
+      "tipo": "Pesquisa",
+      "data_inicial": "23/09/2019",
+      "data_final": "23/09/2019",
+      "status": "Ativa"
+    },
+    {
+      "codigo": 4,
+      "acao": "Ação 4",
+      "tipo": "Pesquisa",
+      "data_inicial": "23/09/2019",
+      "data_final": "23/09/2019",
+      "status": "Ativa"
+    },
+    {
+      "codigo": 5,
+      "acao": "Ação 5",
+      "tipo": "Pesquisa",
+      "data_inicial": "23/09/2019",
+      "data_final": "23/09/2019",
+      "status": "Ativa"
+    }
+  ],
+
+"pontuacoes": [
+    {
+      "codigo": 1,
+      "descricao": "Ganhe mais pontos 1",
+      "status": "Ativo",
+      "tipo": "Pontos"
+    },
+    {
+      "codigo": 2,
+      "descricao": "Ganhe mais pontos 2",
+      "status": "Ativo",
+      "tipo": "Pontos"
+    },
+    {
+      "codigo": 3,
+      "descricao": "Ganhe mais pontos 3",
+      "status": "Ativo",
+      "tipo": "Bônus"
+    },
+    {
+      "codigo": 4,
+      "descricao": "Ganhe mais pontos 4",
+      "status": "Ativo",
+      "tipo": "Pontos"
+    },
+    {
+      "codigo": 5,
+      "descricao": "Ganhe mais pontos 5",
+      "status": "Ativo",
+      "tipo": "Bônus"
+    }
+  ],
+
+"cadastros_gerais": [
+    {
+      "codigo": 1,
+      "descricao": "Tipos de Ocorrência"
+    },
+    {
+      "codigo": 2,
+      "descricao": "Tipos de Perguntas"
+    },
+    {
+      "codigo": 3,
+      "descricao": "Tipos de Telefones"
+    },
+    {
+      "codigo": 4,
+      "descricao": "Tipos de Endereço"
+    },
+    {
+      "codigo": 5,
+      "descricao": "Tipos de Ações"
+    }
+  ],
+
+"combos": [
+    {
+      "codigo": 1,
+      "descricao": "Combo 1",
+      "codigo_interno": "111",
+      "status": "Ativo"
+    },
+    {
+      "codigo": 2,
+      "descricao": "Combo 2",
+      "codigo_interno": "111",
+      "status": "Ativo"
+    },
+    {
+      "codigo": 3,
+      "descricao": "Combo 3",
+      "codigo_interno": "111",
+      "status": "Ativo"
+    },
+    {
+      "codigo": 4,
+      "descricao": "Combo 4",
+      "codigo_interno": "111",
+      "status": "Ativo"
+    },
+    {
+      "codigo": 5,
+      "descricao": "Combo 5",
+      "codigo_interno": "111",
+      "status": "Ativo"
+    }
+  ],
+
+"perguntas": [
+    {
+      "codigo": 1,
+      "sequencia": 1,
+      "pergunta": "Pergunta 1",
+      "tipo": "Resposta única"
+    },
+    {
+      "codigo": 2,
+      "sequencia": 2,
+      "pergunta": "Pergunta 2",
+      "tipo": "Resposta única"
+    },
+    {
+      "codigo": 3,
+      "sequencia": 3,
+      "pergunta": "Pergunta 3",
+      "tipo": "Resposta única"
+    },
+    {
+      "codigo": 4,
+      "sequencia": 4,
+      "pergunta": "Pergunta 4",
+      "tipo": "Resposta única"
+    },
+    {
+      "codigo": 5,
+      "sequencia": 5,
+      "pergunta": "Pergunta 5",
+      "tipo": "Resposta única"
+    }
+  ],
+
+"opcoes": [
+    {
+      "codigo": 1,
+      "descricao": "Opção 1",
+      "status": "Ativo",
+      "resposta_certa": "NAO"
+    },
+    {
+      "codigo": 2,
+      "descricao": "Opção 2",
+      "status": "Ativo",
+      "resposta_certa": "SIM"
+    },
+    {
+      "codigo": 3,
+      "descricao": "Opção 3",
+      "status": "Ativo",
+      "resposta_certa": "NAO"
+    },
+    {
+      "codigo": 4,
+      "descricao": "Opção 4",
+      "status": "Ativo",
+      "resposta_certa": "NAO"
+    },
+    {
+      "codigo": 5,
+      "descricao": "Opção 5",
+      "status": "Ativo",
+      "resposta_certa": "NAO"
+    }
+  ],
+  "entidades_pesquisar":  [
+    {
+      "codigo": 1,
+      "cartao": "123456",
+      "conta": "654321",
+      "produto": "Normal",
+      "nome": "Cadastro 1",
+      "documento": "11111111111",
+      "data_nascimento": "11/11/1111"
+    },
+    {
+      "codigo": 2,
+      "cartao": "123456",
+      "conta": "654321",
+      "produto": "Normal",
+      "nome": "Cadastro 2",
+      "documento": "11111111111",
+      "data_nascimento": "11/11/1111"
+    },
+    {
+      "codigo": 3,
+      "cartao": "123456",
+      "conta": "654321",
+      "produto": "Normal",
+      "nome": "Cadastro 3",
+      "documento": "11111111111",
+      "data_nascimento": "11/11/1111"
+    },
+    {
+      "codigo": 4,
+      "cartao": "123456",
+      "conta": "654321",
+      "produto": "Normal",
+      "nome": "Cadastro 1",
+      "documento": "11111111111",
+      "data_nascimento": "11/11/1111"
+    },
+    {
+      "codigo": 5,
+      "cartao": "123456",
+      "conta": "654321",
+      "produto": "Normal",
+      "nome": "Cadastro 5",
+      "documento": "11111111111",
+      "data_nascimento": "11/11/1111"
+    }
+  ]
+
+}
